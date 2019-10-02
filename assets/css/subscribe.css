@@ -1,11 +1,13 @@
 .subscribe-text {
     font-size: 1.4rem;
     font-weight: 400;
-    margin-top: -20px;
+    margin-top: -38px;
+    font-style: italic;
 }
 .subscribe-title {
     font-size: 2rem;
     padding-bottom: 11px;
+    padding-left: 20px;
 }
 .subscribe-input {
     position: relative;
@@ -14,8 +16,8 @@
     padding-left: 1em;
     padding-right: 1em;
     transition: all 0.8s;
-    padding-bottom: 7px;
-    font-size: 2rem;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
     background-color: #1d2339;
     border-color: #ffffff;
     color: #ffffff;
@@ -37,11 +39,13 @@
     border-color: white;
 }
 
+.subscribe-button:hover {background-color: #00edb1;border-color: transparent;color: white;}
+
 textarea:focus, input:focus{
     outline: none;
 }
 
 .subscribe-form {
     display: flex;
-    padding-bottom: 54px;
+    padding-bottom: 57px;
 }
