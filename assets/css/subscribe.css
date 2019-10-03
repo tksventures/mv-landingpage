@@ -1,8 +1,9 @@
 .subscribe-text {
     font-size: 1.4rem;
     font-weight: 400;
-    margin-top: -38px;
+    /* margin-top: -68px; */
     font-style: italic;
+    /* padding-top: 15px; */
 }
 .subscribe-title {
     font-size: 2rem;
@@ -32,14 +33,30 @@
     border-radius: 0px 1000px 1000px 0px;
     font-size: 2rem;
     padding-top: 0px;
-    padding-bottom: 1px;
+    padding-bottom: 2px;
     font-weight: 900;
-    padding-left: 10px;
+    padding-left: 17px;
     color: #1d2339;
     border-color: white;
+    margin-left: -5px;
 }
 
-.subscribe-button:hover {background-color: #00edb1;border-color: transparent;color: white;}
+.subscribe-button:hover {background-color: #00e0b7;border-color: transparent;color: white;}
+.subscribe-notify {
+    display: block;
+    position: relative;
+    font-size: .9rem;
+    color: red;
+    margin-left: 20px;
+    padding-bottom: 50px;
+}
+.subscribe-notify-success {
+    color: #00edb1;
+    display: block;
+}
+.subscribe-notify-failure {
+    display: block;
+}
 
 textarea:focus, input:focus{
     outline: none;
@@ -47,5 +64,25 @@ textarea:focus, input:focus{
 
 .subscribe-form {
     display: flex;
-    padding-bottom: 57px;
+    padding-bottom: 5px;
+}
+
+.subscribe-section {
+    background-image: url();
+    background-image: url(images/newsletter.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width: 768px) {
+
+.subscribe-text { margin-top:-20px
+}
+
+.subscribe-column {
+    width: 50%;
+}
+
 }
