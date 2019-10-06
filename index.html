@@ -512,6 +512,12 @@ View White Paper                                </a>-->
         </div>
         <!-- /Hero and Navbar -->
         
+  
+
+
+
+
+
         
         <!-- App showcase Section -->
 		<a name="portfolio"></a>
@@ -527,9 +533,10 @@ View White Paper                                </a>-->
                   <h2 class="title is-2 dark-font">Multichain Ecosystem</h2>
                     <h4 class="subtitle is-4 dark-font">Discover our Portfolio of TKS Token Integrated Software Products</h4>
                 </div>
-                
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   
                 <!-- Content -->
-                <div class="content-wrapper">
+                <div id= "tabs" class="content-wrapper">
                     <div class="columns is-vcentered">
                         <!-- App mockups -->
                         <div class="column is-7">
@@ -552,7 +559,7 @@ View White Paper                                </a>-->
                             </div>
                         </div>
                         <!-- Mockups content -->
-                        <div class="column is-5">
+                        <div class="column showcase-text-container is-5">
                             <!-- Feature -->
                             <div id="feature-1" class="showcase-text-wrapper animated preFadeInUp fadeInUp">
                                 <h3 class="title is-3 dark-font">Multichain Ventures</h3>
@@ -597,25 +604,66 @@ View White Paper                                </a>-->
                             </div>
                         </div>
                     </div>
-                    
                     <!-- Controls -->
-                    <div class="slide-control">
-                        <div class="slide-dot is-active" data-feature="mockup-1" data-feature-text="feature-1">
+                    <div id="tabs" class="slide-control">
+                        <a id="t1" class="slide-dot is-active" data-feature="mockup-1" data-feature-text="feature-1">
                             <img src="assets/images/illustrations/icons/landing-v5/mcv-dot.svg" alt="">
-                        </div>
-                        <div class="slide-dot" data-feature="mockup-2" data-feature-text="feature-2">
+                        </a>
+                        <a id="t2" class="slide-dot" data-feature="mockup-2" data-feature-text="feature-2">
                             <img src="assets/images/illustrations/icons/landing-v5/cubed-dot.svg" alt="">
-                        </div>
-                        <div class="slide-dot" data-feature="mockup-3" data-feature-text="feature-3">
+                        </a>
+                        <a id="t3" class="slide-dot" data-feature="mockup-3" data-feature-text="feature-3">
                             <img src="assets/images/illustrations/icons/landing-v5/tokes-dot.svg" alt="">
-                        </div>
-						                        <div class="slide-dot" data-feature="mockup-4" data-feature-text="feature-4">
+                        </a>
+						<a id="t4" class="slide-dot" data-feature="mockup-4" data-feature-text="feature-4">
                             <img src="assets/images/illustrations/icons/landing-v5/eden-dot.svg" alt="">
-                        </div>
-						                        <div class="slide-dot" data-feature="mockup-5" data-feature-text="feature-5">
-                            <img id="token-sale" src="assets/images/illustrations/icons/landing-v5/reli-dot.svg" alt="">
-                        </div>
+                        </a>
+						<a id="t5" class="slide-dot" data-feature="mockup-5" data-feature-text="feature-5">
+                            <img src="assets/images/illustrations/icons/landing-v5/reli-dot.svg" alt="">
+                        </a>
+                        <p id="token-sale"></p>
                     </div>
+<script type="text/javascript">
+
+
+
+
+var dot = $(".slide-control > .slide-dot");
+var dotimage = $(".showcase-wrapper > .showcase-wrap");
+var dottext = $(".showcase-text-container > .showcase-text-wrapper");
+
+
+var timer = setInterval(function(){
+        
+  var cur = $(".slide-control > .is-active").index();
+  var curimage = $(".showcase-wrapper > .is-active").index();
+  var curtext = $(".showcase-text-container > .showcase-text-wrapper").index();
+
+  var nxt = (cur + 1) % dot.length;
+  var nxtimage = (cur + 1) % dotimage.length;
+  var nxttext = (cur + 1) % dottext.length;
+
+  dot.eq(cur).removeClass("is-active");
+  dot.eq(nxt).addClass("is-active");
+
+  dotimage.eq(curimage).removeClass("is-active");
+  dotimage.eq(nxtimage).addClass("is-active");
+
+  dottext.eq(curtext).removeClass("is-hidden");
+  dottext.eq(curtext).siblings().removeClass("is-hidden");
+  dottext.eq(nxttext).siblings().addClass("is-hidden");
+
+
+
+
+}, 3000);
+
+ $('.slide-dot').on('click', function(){
+       clearInterval(timer);
+    });
+    
+
+</script>
                 </div>
             </div>
         </div>
