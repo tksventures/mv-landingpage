@@ -168,6 +168,7 @@ textarea:focus, input:focus{
     border-radius: 1000px;
     width: 80%;
     padding: 3px;
+    text-align: center;
 }
 .subscribe-notify-failure-top {
     display: block;
@@ -175,6 +176,7 @@ textarea:focus, input:focus{
     border-radius: 1000px;
     width: 60%;
     padding: 3px;
+    text-align: center;
 }
 
 
