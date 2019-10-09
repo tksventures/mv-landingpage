@@ -19,7 +19,7 @@
     transition: all 0.8s;
     padding-bottom: 5px;
     font-size: 1.5rem;
-    background-color: #1d2339;
+    background-color: #1d23393d;
     border-color: #ffffff;
     color: #ffffff;
     max-width: 100%;
@@ -79,6 +79,117 @@ textarea:focus, input:focus{
 .font-15 {
     font-size: 15px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+.subscribe-text { margin-top:-20px
+}
+
+.subscribe-column {
+    width: 50%;
+}
+
+}
+
+
+
+
+
+.subscribe-column-top{
+    /* padding-left: 0px; */
+}
+
+.subscribe-title-top {
+    font-size: 1.25rem;
+    padding-bottom: 11px;
+    /* padding-left: 20px; */
+    text-shadow: 0 3px rgba(29,35,57,0.1);
+}
+.subscribe-input-top {
+    position: relative;
+    display: inline;
+    border-radius: 1000px 0px 0px 1000px;
+    padding-left: 1em;
+    padding-right: 1em;
+    transition: all 0.8s;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: #ffffff;
+    max-width: 100%;
+    width: 100%;
+    /* box-shadow: none !important; */
+    border: 3px solid #ffffff;
+    box-shadow: 0 3px rgba(29,35,57,0.1);
+}
+.subscribe-button-top {
+    position: relative;
+    display: inline;
+    border-radius: 0px 1000px 1000px 0px;
+    font-size: 20px;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    font-weight: 900;
+    color: #1d2339;
+    border-color: white;
+    /* margin-left: -7px; */
+    padding-left: 9px;
+    box-shadow: 0 3px rgba(29,35,57,0.1);
+}
+
+.subscribe-button-top:hover {background-color: #00e0b7;border-color: transparent;color: white;}
+.subscribe-notify-top {
+    display: none;
+    position: relative;
+    font-size: .9rem;
+    color: white;
+    margin-left: 20px;
+    padding-bottom: 50px;
+}
+.subscribe-notify-success-top {
+    color: #0a0a0a;
+    display: block;
+    background-color: #00edb1;
+    border-radius: 1000px;
+    width: 80%;
+    padding: 3px;
+}
+.subscribe-notify-failure-top {
+    display: block;
+    background-color: #ff0c00;
+    border-radius: 1000px;
+    width: 60%;
+    padding: 3px;
+}
+
+
+
+.subscribe-form-top {
+    display: flex;
+    padding-bottom: 5px;
+    height: 50px;
+}
+
+
+.pad-title{
+    padding-bottom: 12px;
+}
+
 
 
 
