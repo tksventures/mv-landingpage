@@ -76,6 +76,24 @@ textarea:focus, input:focus{
 }
 
 
+.font-15 {
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 768px) {
 
 .subscribe-text { margin-top:-20px
