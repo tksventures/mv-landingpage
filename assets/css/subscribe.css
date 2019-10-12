@@ -19,7 +19,7 @@
     transition: all 0.8s;
     padding-bottom: 5px;
     font-size: 1.5rem;
-    background-color: #1d23393d;
+    background-color: #1d2339;
     border-color: #ffffff;
     color: #ffffff;
     max-width: 100%;
@@ -43,7 +43,7 @@
 
 .subscribe-button:hover {background-color: #00e0b7;border-color: transparent;color: white;}
 .subscribe-notify {
-    display: block;
+    display: none;
     position: relative;
     font-size: .9rem;
     color: red;
@@ -69,7 +69,7 @@ textarea:focus, input:focus{
 
 .subscribe-section {
     background-image: url();
-    background-image: url(images/newsletter.svg);
+    background-image: url(images/circles-and-shapes-w.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -245,3 +245,7 @@ textarea:focus, input:focus{
     width: 100%;
     background: #fff;
     border: 1px solid #ededed;}
+
+.italic{
+    font-style: italic;
+}
