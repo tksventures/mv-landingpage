@@ -853,6 +853,8 @@ var timer = setInterval(function(){
             <div class="container">
         
 				        		<a name="tokenomics"></a>
+
+				      
                 <!-- Title -->
                 <div class="section-title-wrapper has-text-centered">
 
@@ -861,8 +863,19 @@ var timer = setInterval(function(){
                 </div>
 
 <div class="container slide-control-token">
+
+<!-- Tokenomics Contorls -->
+<div class="slide-controls">
+        <a id="token-button-1" onselectstart="return false" class="control-button active-tab">1</a>
+        <div class="control-separator"></div>
+        <a id="token-button-2" onselectstart="return false" class="control-button">2</a>
+        <div class="control-separator"></div>
+        <a id="token-button-3" onselectstart="return false" class="control-button">3</a>
+</div>
+<!-- /Tokenomics Contorls -->
+
                 <!-- Feature -->
-                <div class="columns is-vcentered showcase-wrapper-token is-visible">
+                <div id="token-feature-1" class="columns is-vcentered showcase-wrapper-token is-visible">
                     <div class="column is-7 has-text-centered">
                         <img class="featured-svg" src="assets/images/illustrations/drawings/mv-tokenomics-1.svg" alt="">
                     </div>
@@ -883,7 +896,7 @@ var timer = setInterval(function(){
                 <!-- /Feature -->
 
                                 <!-- Feature -->
-                <div class="columns is-vcentered showcase-wrapper-token">
+                <div id="token-feature-2" class="columns is-vcentered showcase-wrapper-token">
                     <div class="column is-7 has-text-centered">
                         <img class="featured-svg" src="assets/images/illustrations/drawings/mv-tokenomics-2.svg" alt="">
                     </div>
@@ -905,7 +918,7 @@ Discounts for Multichain products and services will be given for holders of TKS,
                 <!-- /Feature -->
         
                 <!-- Feature -->
-                <div class="columns is-vcentered showcase-wrapper-token">
+                <div id="token-feature-3" class="columns is-vcentered showcase-wrapper-token">
                     <div class="column is-7 has-text-centered">
                         <img class="featured-svg" src="assets/images/illustrations/drawings/mv-tokenomics.svg" alt="">
                     </div>
@@ -924,14 +937,20 @@ Discounts for Multichain products and services will be given for holders of TKS,
                 <!-- /Feature -->
 </div>
 
+<script type="text/javascript">
 
+
+
+
+</script>
 
 <script type="text/javascript">
+    var controlbutton = $(".slide-controls > .control-button");
 
 
 var tokendotblock = $(".slide-control-token > .showcase-wrapper-token");
 
-var timer = setInterval(function(){
+/**var timer = setInterval(function(){
         
   var tokencur = $(".slide-control-token > .is-visible").index();
   var tokennxt = (tokencur + 1) % tokendotblock.length;
@@ -943,8 +962,53 @@ var timer = setInterval(function(){
 
  $('.slide-dot-token').on('click', function(){
        clearInterval(timer);
-    });
-    
+    });**/
+   
+
+
+ $('#token-button-1').click(function(){
+
+  $('#token-button-1').addClass("active-tab");
+  $(this).siblings().removeClass("active-tab");
+  
+  $('#token-feature-1').addClass("is-visible");
+  $('#token-feature-2').removeClass("is-visible");
+  $('#token-feature-3').removeClass("is-visible");
+
+
+
+
+    }); 
+
+     $('#token-button-2').click(function(){
+
+
+
+  $('#token-button-2').addClass("active-tab");
+  $(this).siblings().removeClass("active-tab");
+
+  $('#token-feature-2').addClass("is-visible");
+  $('#token-feature-1').removeClass("is-visible");
+  $('#token-feature-3').removeClass("is-visible");
+
+
+
+
+    }); 
+
+     $('#token-button-3').click(function(){
+
+
+
+  $('#token-button-3').addClass("active-tab");
+  $(this).siblings().removeClass("active-tab");
+  
+  $('#token-feature-3').addClass("is-visible");
+  $('#token-feature-1').removeClass("is-visible");
+  $('#token-feature-2').removeClass("is-visible");
+
+
+    }); 
 
 </script>
 
