@@ -748,7 +748,7 @@ var timer = setInterval(function(){
 
 
 
-}, 3000);
+}, 5000);
 
  $('.slide-dot').on('click', function(){
        clearInterval(timer);
@@ -852,17 +852,25 @@ var timer = setInterval(function(){
         <div class="section is-medium">
             <div class="container">
         
-                <!-- Feature -->
 				        		<a name="tokenomics"></a>
+                <!-- Title -->
+                <div class="section-title-wrapper has-text-centered">
 
-                <div class="columns is-vcentered">
+                  <h2 class="title is-2 dark-font">Multichain Token</h2>
+                    <h4 class="subtitle is-4 dark-font">All Multichain products utilize the Multichain Token.</h4>
+                </div>
+
+<div class="container slide-control-token">
+                <!-- Feature -->
+                <div class="columns is-vcentered showcase-wrapper-token is-visible">
                     <div class="column is-7 has-text-centered">
                         <img class="featured-svg" src="assets/images/illustrations/drawings/mv-tokenomics-1.svg" alt="">
                     </div>
 
+
+
                     <div class="column is-5">
                       <h3 class="detailed-feature-subtitle dark-font">MULTICHAIN TOKEN ECOSYSTEM</h3>
-                      <h2 class="title is-3 no-margin">Multichain Token Ecosystem</h2>
                         <div class="title-divider"></div>
                         <span class="section-feature-description">The Tokes (TKS) token is the native transactional unit for the Multichain ecosystem of software products and has integrations with our industry partners (e.g., <a href=https://thechex.com/ target="_blank"">CHEX</a>, and <a href=https://vaultlogic.com/target="_blank"">Vault Logic</a>).  TKS serve as a low cost, fast, payment option within our products, and also transacts as the native fee unit for services like EDEN.</span>
                         <div class="pt-10 pb-10">
@@ -873,40 +881,37 @@ var timer = setInterval(function(){
                     </div>
                 </div>
                 <!-- /Feature -->
-        
-                <!-- Feature -->
-                <div class="columns is-vcentered">
-                    <div class="column is-7 has-text-centered is-hidden-tablet is-hidden-desktop">
+
+                                <!-- Feature -->
+                <div class="columns is-vcentered showcase-wrapper-token">
+                    <div class="column is-7 has-text-centered">
                         <img class="featured-svg" src="assets/images/illustrations/drawings/mv-tokenomics-2.svg" alt="">
                     </div>
-        
-                    <div class="column is-5 has-text-right">
-                      <h3 class="detailed-feature-subtitle">TOKENOMICS</h3>
-                      <h2 class="title is-3 no-margin">Tokenomics</h2>
-                        <div class="title-divider is-right"></div>
-                        <span class="section-feature-description">Discounts for Multichain products and services will be given for holders of TKS, making the token more than just a transactional unit across our products. Our aim is to provide value to our customers through software services, with incentives to spend and hold TKS.  See a full breakdown of the TKS ecosystem with the link below.</span>
+
+
+
+                    <div class="column is-5">
+                      <h3 class="detailed-feature-subtitle dark-font">TOKENOMICS</h3>
+                        <div class="title-divider"></div>
+                        <span class="section-feature-description">CS
+Discounts for Multichain products and services will be given for holders of TKS, making the token more than just a transactional unit across our products. Our aim is to provide value to our customers through software services, with incentives to spend and hold TKS.  See a full breakdown of the TKS ecosystem with the link below.</span>
                         <div class="pt-10 pb-10">
                             <a href="#" class="button btn-align btn-more is-link color-secondary">
-                                Read the TKS Tokenomics Paper<i class="sl sl-icon-arrow-right"></i>
+                               Read the TKS Tokenomics Pape<i class="sl sl-icon-arrow-right"></i>
                             </a>
                         </div>
-                    </div>
-        
-                    <div class="column is-7 has-text-centered is-hidden-mobile">
-                        <img class="featured-svg" src="assets/images/illustrations/drawings/mv-tokenomics-2.svg" alt="">
                     </div>
                 </div>
                 <!-- /Feature -->
         
                 <!-- Feature -->
-                <div class="columns is-vcentered">
+                <div class="columns is-vcentered showcase-wrapper-token">
                     <div class="column is-7 has-text-centered">
                         <img class="featured-svg" src="assets/images/illustrations/drawings/mv-tokenomics.svg" alt="">
                     </div>
         
                     <div class="column is-5">
                       <h3 class="detailed-feature-subtitle">BLOCKCHAIN FOR ALL</h3>
-                      <h2 class="title is-3 no-margin">Blockchain for All</h2>
                         <div class="title-divider"></div>
                         <span class="section-feature-description">While we brand some of our products products for specific business verticals, our team builds scalable blockchain solutions for any industry, and can white-label or tailor our solutions for your specific area of need.  From white-label payment options, to supply chain visibility tools, find out how Multichain can bring blockchain to your business.</span>
                         <div class="pt-10 pb-10">
@@ -917,6 +922,39 @@ var timer = setInterval(function(){
                     </div>
                 </div>
                 <!-- /Feature -->
+</div>
+
+
+
+<script type="text/javascript">
+
+
+var tokendotblock = $(".slide-control-token > .showcase-wrapper-token");
+
+var timer = setInterval(function(){
+        
+  var tokencur = $(".slide-control-token > .is-visible").index();
+  var tokennxt = (tokencur + 1) % tokendotblock.length;
+
+  tokendotblock.eq(tokencur).removeClass("is-visible");
+  tokendotblock.eq(tokennxt).addClass("is-visible");
+
+}, 3000);
+
+ $('.slide-dot-token').on('click', function(){
+       clearInterval(timer);
+    });
+    
+
+</script>
+
+
+
+
+
+
+
+        
         
                 <!-- CTA -->
                 <h2 class="has-text-centered">

@@ -274,3 +274,7 @@ select {
     text-indent: 5px;
     text-overflow: '';
 }
+
+.showcase-wrapper-token {opacity:0;display:none !important;transition: opacity 1s}
+
+.is-visible {opacity:1;display:flex !important}
