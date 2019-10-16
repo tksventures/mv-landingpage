@@ -1,3 +1,12 @@
+.font-timer{
+    font-size: 3rem;
+    margin-bottom: 3rem !important;
+}
+.timer-subtitle{
+    font-size: .9rem;
+    margin-bottom: 0rem !important;
+}
+
 .subscribe-text {
     font-size: 1.4rem;
     font-weight: 400;

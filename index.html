@@ -20,11 +20,9 @@
 
     </head>
     <body>
-        <!--
-        <div class="pageloader"></div>
-        <div class="infraloader is-active"></div>        -->
+
         <!-- Hero and Navbar -->
-        <div class="hero is-default is-bold is-fullheight hero-bg-img" style="background-image:url('assets/images/bg/poonhill.jpg')"">
+        <div class="hero is-default is-bold is-fullheight hero-bg-img" style="background-image:url('assets/images/bg/poonhill.jpg')">
         
             <!-- Navbar partial -->
             <nav class="navbar navbar-wrapper is-cloned">
@@ -38,7 +36,7 @@
                             <img src="assets/images/logos/mv-logo-white.svg" alt="">
                         </a>
             
-                        <!-- Sidebar Trigger 
+                        <!-- Sidebar Trigger
                         <a class="navbar-item hamburger-btn navigation-trigger" href="javascript:void(0);">
                             <span class="menu-toggle">	
                                 <span class="icon-box-toggle"> 	
@@ -51,7 +49,7 @@
                             </span>
                         </a>
             
-                        <!-- Responsive toggle 
+                        <!-- Responsive toggle
                         <div class="custom-burger" data-target="is-cloned">
                             <a class="responsive-btn" href="javascript:void(0);">
                                 <span class="menu-toggle">	
@@ -226,19 +224,20 @@
 
                             <!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="#portfolio">
-                                Portfolio
+                                Our Companies
                             </a>
                             <!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="#tokenomics">
                                 Tokenomics
                             </a>
-							                            <!-- Navbar item -->
-                            <a class="navbar-item is-slide is-centered-tablet" href="#team">
-                                Team
-                            </a>
+
                                                                                                                                                             <!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="https://medium.com/multichainventures" target="_blank">
-                                News
+                                Blog
+                            </a>
+                            							                            <!-- Navbar item -->
+                            <a class="navbar-item is-slide is-centered-tablet" href="#team">
+                                Team
                             </a>
 							<!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="#contact">
@@ -445,18 +444,20 @@
                                 Token Sale
                             </a>
 
-                            <!-- Navbar item --><a class="navbar-item is-slide is-centered-tablet" href="#portfolio"> Portfolio</a>
+                            <!-- Navbar item --><a class="navbar-item is-slide is-centered-tablet" href="#portfolio"> Our Companies</a>
 							                            <!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="#tokenomics">
                                 Tokenomics
                             </a>
-							<!-- Navbar item -->
-                            <a class="navbar-item is-slide is-centered-tablet" href="#team">
-                                Team
-                            </a>
+
                                                                                                                                                             <!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="https://medium.com/multichainventures" target="_blank">
-                                News
+                                Blog
+                            </a>
+
+                            							<!-- Navbar item -->
+                            <a class="navbar-item is-slide is-centered-tablet" href="#team">
+                                Team
                             </a>
 							<!-- Navbar item -->
 							<a class="navbar-item is-slide is-centered-tablet" href="#contact">
@@ -490,7 +491,7 @@ Learn More                                </a> -->
 <!-- Subscribe Block -->
                         <div class="column is-10 subscribe-column-top">
                         <div class="minimal-feature">
-                            <h2 class="title minimal-title bold-text light-text no-margin subscribe-title-top has-text-centered">Subscribe to learn more.</h2>
+                            <h2 class="title minimal-title bold-text light-text no-margin subscribe-title-top has-text-centered">Subscribe to be notified.</h2>
 
                             <div class="control subscribe-form-top">
                             <input type="text" class="subscribe-input-top" placeholder="Enter your email">
@@ -514,8 +515,41 @@ Learn More                                </a> -->
             </div>
 
             <!-- Client logos -->
-            <div class="hero-foot pt-30 pb-30">
-                <div class="container">
+            <div class="hero-foot pb-30">
+                <div class="container">                                                    <p class="subtitle has-text-centered timer-subtitle"> TOKEN SALE BEGINS</h2>
+
+                                                                    <p id="demo" class="subtitle has-text-centered font-timer"></p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 1, 2020 0:0:0").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + " : " + hours + " : "
+  + minutes + " : " + seconds + "";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
                                     <p class="subtitle has-text-centered font-15"> THE MULTICHAIN VENTURES ECOSYSTEM</h2>
 
                     <div class="tabs partner-tabs is-centered">
