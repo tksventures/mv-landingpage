@@ -541,12 +541,21 @@ var x = setInterval(function() {
   // Output the result in an element with id="demo"
   document.getElementById("demo").innerHTML = days + " : " + hours + " : "
   + minutes + " : " + seconds + "";
-    
+
+      // Output the result in an element with id="demo"
+  document.getElementById("demo-days").innerHTML = days;
+  document.getElementById("demo-hours").innerHTML = hours;
+  document.getElementById("demo-minutes").innerHTML = minutes;
+
+      
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "TOKEN SALE OPEN NOW";
+        document.getElementById("demo2").innerHTML = "TOKEN SALE OPEN NOW";
   }
+
+   
 }, 1000);
 </script>
 
@@ -798,8 +807,29 @@ var timer = setInterval(function(){
 
 <!-- Subscribe Section -->
 <section  class="section section-primary no-padding-bottom subscribe-section">
+            
+            <div class="container" >
+
+
+              <p class="subtitle has-text-centered font-15"> TOKEN SALE BEGINS</h2>
+<div class="columns is-vcentered timer-block-container">
+                  <p id="demo2" class="subtitle has-text-centered font-timer"></p>
+
+                  <div class="column is-3 timer-block-outer"><span id="demo-days" class="subtitle has-text-centered font-timer block-timer "></span><span class="block-timer-label">days</span></div>
+                  <div class="column is-3 timer-block-outer"><span id="demo-hours" class="subtitle has-text-centered font-timer block-timer "></span><span class="block-timer-label">hours</span></div>
+                  <div class="column is-3 timer-block-outer"><span id="demo-minutes" class="subtitle has-text-centered font-timer block-timer "></span><span class="block-timer-label">mins</span></div>
+</div>
+
+
+
+</div>
             <div class="container" >
                 <div class="columns is-vcentered">
+
+
+
+
+
                     <!-- CTA content -->
                     <div class="column is-5 is-offset-1 subscribe-column">
                         <div class="minimal-feature">
@@ -830,6 +860,8 @@ var timer = setInterval(function(){
                     <!-- /CTA content -->
         
 </div></div>
+
+
 
               <!-- Start Your Article Section -->
             <div class="container">
