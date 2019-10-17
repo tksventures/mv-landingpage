@@ -115,7 +115,7 @@ ul {}.tab-reviews{color:#aaa}/*! _testimonials.scss | Bulkit | CSS Ninja */.test
 .hero-bg-img {background-image: url('https://tksventures.github.io/mv-landingpage/assets/images/bg/poonhill.jpg');background-size: cover;background-repeat: no-repeat;background-position: center top;background-color: black;object-fit: cover;}
 
 @media only screen and (max-width: 1440px) {
-.hero-bg-img {background-size: cover;background-repeat: no-repeat;background-position: center top;background-color: black;object-fit: cover;}
+.hero-bg-img {background-size: cover;background-repeat: no-repeat;background-position: center top;background-color: #1d2339;object-fit: cover;}
 
 
 }
