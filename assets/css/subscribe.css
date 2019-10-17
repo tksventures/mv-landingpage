@@ -1,3 +1,7 @@
+.embed-site{
+    height: calc(100vh - 4.6rem);
+}
+
 .blue-bg{background-color:#1D2339;}
 
 .token-button{
