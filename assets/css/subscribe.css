@@ -1,3 +1,33 @@
+.journey-popup{
+    background-color: #1d2339;
+    border-radius: 12px;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    /* border: 1px solid #a9abac; */
+    background-image: url(images/circles-and-shapes-w.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display:none;
+    /* height: 0px; */
+    /* transition: height 1s; */
+    /* visibility: hidden; */
+    /* opacity: 1; */
+    overflow: hidden;
+    }
+
+.journey-popup-text{
+    font-size: 1.125rem;
+}
+.journey-wrapper{}
+.active-journey{
+    border: 2px solid #00edb1 !important;
+    /* background: #00edb1 !important; */
+    box-shadow: 0px 10px 20px #00edb159;
+}
+.active-journey:hover{    box-shadow: 0px 10px 20px #00edb159 !important;
+}
+.is-popup{display:block;/* height: 330px; *//* visibility: visible; *//* opacity: 1; */}
 .embed-site{
     height: calc(100vh - 4.6rem);
 }
