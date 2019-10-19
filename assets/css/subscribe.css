@@ -1,3 +1,12 @@
+.download-button{
+    width: 80%;
+    margin: .5rem;
+}
+.download-image{
+    width: 90%;
+    margin-left: 9%;
+}
+.smaller-title{}
 .journey-popup{
     background-color: #1d2339;
     border-radius: 12px;
@@ -375,6 +384,11 @@ select {
 
 
 @media screen and (min-width: 768px) {
+.download-button{
+    width: 46% !important;
+    margin: 1.5%;
+    /* height: auto; */
+}
 
 .subscribe-text { margin-top:-20px
 }
