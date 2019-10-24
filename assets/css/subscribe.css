@@ -154,19 +154,19 @@ textarea:focus, input:focus{
 
 .subscribe-button-top:hover {background-color: #00e0b7;border-color: transparent;color: white;}
 .subscribe-notify-top {
-    display: none;
-    position: relative;
+    position: absolute;
+    top: 50px;
     font-size: .9rem;
     color: white;
-    margin-left: 20px;
-    padding-bottom: 50px;
+    max-width: 300px;
+    margin-left: 10px;
 }
 .subscribe-notify-success-top {
     color: #0a0a0a;
     display: block;
     background-color: #00edb1;
     border-radius: 1000px;
-    width: 80%;
+    width: 90%;
     padding: 3px;
     text-align: center;
 }
