@@ -44,11 +44,11 @@
 .subscribe-button:hover {background-color: #00e0b7;border-color: transparent;color: white;}
 .subscribe-notify {
     display: block;
-    position: relative;
+    position: absolute;
+    top: 75px;
     font-size: .9rem;
     color: red;
     margin-left: 20px;
-    padding-bottom: 50px;
 }
 .subscribe-notify-success {
     color: #00edb1;
