@@ -568,18 +568,32 @@ var x = setInterval(function() {
                         <div class="minimal-feature">
                             <h2 class="title minimal-title bold-text light-text no-margin subscribe-title">Don't Miss Out!</h2>
 
-                            <div class="control subscribe-form">
-                            <input type="text" class="subscribe-input" placeholder="Enter your email">
-                            <button type="button" class="button input-button subscribe-button">OK</button>
+                            <form id="token_signup" class="control subscribe-form klaviyo_gdpr_embed_JNzCxr" action="https://manage.kmail-lists.com/subscriptions/subscribe?g=JNzCxr" data-ajax-submit="https://manage.kmail-lists.com/ajax/subscriptions/subscribe?g=JNzCxr" method="GET" target="_blank" novalidate="novalidate">
+                                <input type="hidden" name="g" value="JNzCxr">
+                                <input type="text" name="email" id="k_id_email" class="subscribe-input" placeholder="Enter your email">
+                                <div class="klaviyo_form_actions">
+                                    <button type="submit" class="button input-button subscribe-button">OK</button>
+                                </div>
+                                <div class="success_message subscribe-notify subscribe-notify-success" style="display: none;">
+                                    Thank you! Keep an eye out for updates!
+                                </div>
+                                <div class="error_message subscribe-notify subscribe-notify-failure" style="display: none;">
+                                    Not a valid email. Try again.
+                                </div>
+                            </form>
+                            <script type="text/javascript" src="https://www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+                            <script type="text/javascript">
+                                KlaviyoSubscribe.attachToForms('#token_signup', {
+                                    custom_error_message: true,
+                                    custom_success_message: true,
+                                    extra_properties: {
+                                        $source: 'MultichainVenturesTokenSubscribe',
+                                        Brand: 'MultichainVentures',
+                                    }
+                                });
+                            </script>
                            
 
-
-                        </div>
-                         
-                            <div class="subscribe-notify">
-                            <p class="subscribe-notify-success">Thank you! Keep an eye out for updates!</a></p>
-                            <p class="subscribe-notify-failure">Not a valid email. Try again.</a></p>
-                            </div>
                         </div>
                     </div>
                     <!-- /CTA content -->
@@ -1135,25 +1149,25 @@ var x = setInterval(function() {
                     <div class="column is-6">
                         <!-- Contact form -->
                         <div class="contact-form">
-                            <form>
+                            <form action="https://formspree.io/mwgbnprm" method="POST">
                                 <div class="columns is-multiline">
                                     <div class="column is-6">
                                         <div class="control">
                                             <label>Name *</label>
-                                            <input class="input is-medium" type="text">
+                                            <input class="input is-medium" type="text" name="name">
                                         </div>
                                     </div>
                                     <div class="column is-hidden-mobile"></div>
                                     <div class="column is-6">
                                         <div class="control">
                                             <label>Email *</label>
-                                            <input class="input is-medium" type="text">
+                                            <input class="input is-medium" type="text" name="_replyto">
                                         </div>
                                     </div>
                                     <div class="column is-6">
                                         <div class="control">
                                             <label>Company *</label>
-                                            <input class="input is-medium" type="email">
+                                            <input class="input is-medium" type="text" name="company">
                                         </div>
                                     </div>
                                     <div class="column is-6">
@@ -1178,14 +1192,13 @@ var x = setInterval(function() {
                                     <div class="column is-12">
                                         <div class="control">
                                             <label>Message *</label>
-                                            <textarea class="textarea" rows="4"></textarea>
+                                            <textarea class="textarea" rows="4" name="message"></textarea>
                                         </div>
                                     </div>
                                 </div>
+                                <input type="hidden" name="_next" value="https://multichain.ventures"/>
                                 <div class="submit-wrapper">
-                                    <a href="#" class="button button-cta is-bold btn-align secondary-btn raised">
-                                        Send Message
-                                    </a>
+                                    <input type="submit" value="Send Message" class="button button-cta is-bold btn-align secondary-btn raised" style="padding-top:15px;padding-bottom:36px;" />
                                 </div>
                             </form>
                         </div>
