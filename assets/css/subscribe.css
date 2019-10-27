@@ -288,6 +288,7 @@ textarea:focus, input:focus{
 
 .pad-title{
     padding-bottom: 12px;
+    font-size: 2.1rem !important;
 }
 
 
