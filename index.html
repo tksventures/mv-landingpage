@@ -15,16 +15,31 @@
         <link rel="stylesheet" href="assets/css/icons.min.css">
         <link rel="stylesheet" href="assets/css/core_blue.css">
         <link rel="stylesheet" href="assets/css/subscribe.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '560034901471687');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=560034901471687&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
 
     </head>
     <body>
-        <!--
-        <div class="pageloader"></div>
-        <div class="infraloader is-active"></div>        -->
+
         <!-- Hero and Navbar -->
-        <div class="hero is-default is-bold is-fullheight hero-bg-img" style="background-image:url('assets/images/bg/poonhill.jpg')"">
+        <div class="hero is-default is-bold is-fullheight hero-bg-img" style="background-image:url('assets/images/bg/poonhill.jpg')">
         
             <!-- Navbar partial -->
             <nav class="navbar navbar-wrapper is-cloned">
@@ -38,7 +53,7 @@
                             <img src="assets/images/logos/mv-logo-white.svg" alt="">
                         </a>
             
-                        <!-- Sidebar Trigger 
+                        <!-- Sidebar Trigger
                         <a class="navbar-item hamburger-btn navigation-trigger" href="javascript:void(0);">
                             <span class="menu-toggle">	
                                 <span class="icon-box-toggle"> 	
@@ -51,7 +66,7 @@
                             </span>
                         </a>
             
-                        <!-- Responsive toggle 
+                        <!-- Responsive toggle
                         <div class="custom-burger" data-target="is-cloned">
                             <a class="responsive-btn" href="javascript:void(0);">
                                 <span class="menu-toggle">	
@@ -226,19 +241,20 @@
 
                             <!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="#portfolio">
-                                Portfolio
+                                Our Companies
                             </a>
                             <!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="#tokenomics">
                                 Tokenomics
                             </a>
-							                            <!-- Navbar item -->
-                            <a class="navbar-item is-slide is-centered-tablet" href="#team">
-                                Team
-                            </a>
+
                                                                                                                                                             <!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="https://medium.com/multichainventures" target="_blank">
-                                News
+                                Blog
+                            </a>
+                            							                            <!-- Navbar item -->
+                            <a class="navbar-item is-slide is-centered-tablet" href="documents.html">
+                                Whitepaper
                             </a>
 							<!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="#contact">
@@ -445,18 +461,20 @@
                                 Token Sale
                             </a>
 
-                            <!-- Navbar item --><a class="navbar-item is-slide is-centered-tablet" href="#portfolio"> Portfolio</a>
+                            <!-- Navbar item --><a class="navbar-item is-slide is-centered-tablet" href="#portfolio"> Our Companies</a>
 							                            <!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="#tokenomics">
                                 Tokenomics
                             </a>
-							<!-- Navbar item -->
-                            <a class="navbar-item is-slide is-centered-tablet" href="#team">
-                                Team
-                            </a>
+
                                                                                                                                                             <!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="https://medium.com/multichainventures" target="_blank">
-                                News
+                                Blog
+                            </a>
+
+                            							<!-- Navbar item -->
+                            <a class="navbar-item is-slide is-centered-tablet" href="documents.html">
+                                Whitepaper
                             </a>
 							<!-- Navbar item -->
 							<a class="navbar-item is-slide is-centered-tablet" href="#contact">
@@ -479,8 +497,8 @@
                         </div>
                         <div class="column is-5 is-offset-1 is-hero-title">
                             <h1 class="title is-1 header-text-shadow pad-title">
-Future-proof your supply chain                            </h1>
-                            <h2 class="subtitle is-4 header-text-shadow-small"> Blockchain solutions for merchants, developers and crypto companies.</h2>
+                        Add blockchain or crypto to your business without the headache - for any industry.</h1>
+                            <h2 class="subtitle is-4 header-text-shadow-small">Universal Crypto Merchant Solutions & Accessible Blockchain Deployment.  Straightforward tools for payments, development, and supply chains.  </h2>
                             <p class="">
                             <!--<a href="#contact" class="button button-cta is-bold btn-align secondary-btn raised" style="background-color:white;color: #1D2339;margin-right:10px;">
 View White Paper                                </a>-->
@@ -490,7 +508,7 @@ Learn More                                </a> -->
 <!-- Subscribe Block -->
                         <div class="column is-10 subscribe-column-top">
                         <div class="minimal-feature">
-                            <h2 class="title minimal-title bold-text light-text no-margin subscribe-title-top has-text-centered">Subscribe to learn more.</h2>
+                            <h2 class="title minimal-title bold-text light-text no-margin subscribe-title-top has-text-centered">Subscribe to be notified.</h2>
 
                             <form id="email_signup" class="control subscribe-form-top klaviyo_gdpr_embed_JNzCxr" action="https://manage.kmail-lists.com/subscriptions/subscribe?g=JNzCxr" data-ajax-submit="https://manage.kmail-lists.com/ajax/subscriptions/subscribe?g=JNzCxr" method="GET" target="_blank" novalidate="novalidate">
                                 <input type="hidden" name="g" value="JNzCxr">
@@ -526,17 +544,57 @@ Learn More                                </a> -->
             </div>
 
             <!-- Client logos -->
-            <div class="hero-foot pt-30 pb-30">
-                <div class="container">
-                                    <p class="subtitle has-text-centered font-15"> THE MULTICHAIN VENTURES ECOSYSTEM</h2>
+            <div class="hero-foot pb-30">
+                <div class="container">                                                    <p class="subtitle has-text-centered timer-subtitle"> TOKEN SALE BEGINS</h2>
+
+
+                                                                    <p id="demo" class="subtitle has-text-centered font-timer"></p>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 1, 2020 0:0:0").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + " : " + hours + " : "
+  + minutes + " : " + seconds + "";
+
+      // Output the result in an element with id="demo"
+  document.getElementById("demo-days").innerHTML = days;
+  document.getElementById("demo-hours").innerHTML = hours;
+  document.getElementById("demo-minutes").innerHTML = minutes;
+
+      
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "TOKEN SALE OPEN NOW";
+        document.getElementById("demo2").innerHTML = "TOKEN SALE OPEN NOW";
+  }
+
+   
+}, 1000);
+</script>
 
                     <div class="tabs partner-tabs is-centered">
                         <ul>
-                            <li><a href="#portfolio"><img class="partner-logo" src="assets/images/logos/hero-footer/mcv-footer.svg" alt=""></a></li>
-                            <li><a href="#portfolio"><img class="partner-logo" src="assets/images/logos/hero-footer/cubed-footer.svg" alt=""></a></li>
-                            <li><a href="#portfolio"><img class="partner-logo" src="assets/images/logos/hero-footer/tokes-footer.svg" alt=""></a></li>
-                            <li><a href="#portfolio"><img class="partner-logo" src="assets/images/logos/hero-footer/eden-footer.svg" alt=""></a></li>
-                            <li><a href="#portfolio"><img class="partner-logo" src="assets/images/logos/hero-footer/reli-footer.svg" alt=""></a></li>
+                            <li><a href="#portfolio"><img class="partner-logo" src="assets/images/logos/hero-footer/forbes-footer.svg" alt=""></a></li>
+                            <li><a href="#portfolio"><img class="partner-logo" src="assets/images/logos/hero-footer/npr-footer.svg" alt=""></a></li>
+                            <li><a href="#portfolio"><img class="partner-logo" src="assets/images/logos/hero-footer/ge-footer.svg" alt=""></a></li>
+                            <li><a href="#portfolio"><img class="partner-logo" src="assets/images/logos/hero-footer/bnc-footer.svg" alt=""></a></li>
                         </ul>
                     </div>
                 </div>
@@ -547,72 +605,126 @@ Learn More                                </a> -->
   
 
 
-  <!-- Start Your Journey Section 
+  <!-- Start Your Journey Section -->
 		<a name="team"></a>
         <div class="section section-feature-grey is-medium has-background-image is-contain" data-background="assets/images/bg/shapes/circles-and-shapes.png">
             <div class="container">
-                <!-- Title 
+                <!-- Title -->
                 <div class="section-title-wrapper has-text-centered">
-                    <!-- Divider 
+                    <!-- Divider -->
                     <div class="special-divider">
                         <span></span>
                         <span></span>
                     </div>
                     <h2 class="title is-2 dark-font">Start Your Journey</h2>
-                    <h4 class="subtitle is-4 dark-font">Choose an area you are most interested in.</h4>
+                    <h4 class="subtitle is-4 dark-font">Choose your area of interest.</h4>
                 </div>
                 
-                <!-- Content 
+                <!-- Content -->
               <div class="content-wrapper">
-                    <div class="columns">
-                        <div class="column is-hidden-mobile"></div>
 
-                        <!-- Journey Item 
+              <div class="container journey-wrapper">
+              
+
+
+
+                    <div class="columns">
+
+                        <!-- Journey Item -->
                         <div class="column is-3">
-                        <a href="#">
-                            <div class="journey-box shadow-hover">
-                            <img class="image-box" src="assets/images/photos/journey-investor.jpg" alt="">
+                        <a href="#popup">
+                            <div id="journey-button-1" class="journey-box shadow-hover">
+                            <img class="image-box" src="assets/images/photos/journey-token.jpg" alt="">
                             </div>
-                        <div class="journey-name">For Investors</div>
+                        <div class="journey-name">For Token Buyers</div>
                         </a>
                         </div>
-                        <!-- /Journey Item 
+                        <!-- /Journey Item -->
 
-                        <!-- Journey Item 
+                        <!-- Journey Item -->
                         <div class="column is-3">
-                        <a href="#">
-                            <div class="journey-box shadow-hover">
+                        <a href="#popup">
+                            <div id="journey-button-2" class="journey-box shadow-hover">
                             <img class="image-box" src="assets/images/photos/journey-merchant.jpg" alt="">
                             </div>
                         <div class="journey-name">For Merchants</div>
                         </a>
                         </div>
-                        <!-- /Journey Item 
+                        <!-- /Journey Item -->
 
-                        <!-- Journey Item 
+                        <!-- Journey Item -->
                         <div class="column is-3">
-                        <a href="#">
-                            <div class="journey-box shadow-hover">
-                            <img class="image-box" src="assets/images/photos/journey-crypto.jpg" alt="">
-                            </div>
-                        <div class="journey-name">For Crypto</div>
-                        </a>
-                        </div>
-                        <!-- /Journey Item 
-                        
-                        <!-- Journey Item 
-                        <div class="column is-3">
-                        <a href="#">
-                            <div class="journey-box shadow-hover">
+                        <a href="#popup">
+                            <div id="journey-button-3" class="journey-box shadow-hover">
                             <img class="image-box" src="assets/images/photos/journey-supplychain.jpg" alt="">
                             </div>
-                        <div class="journey-name">For Supply Chain</div>
+                        <div class="journey-name">For Supply Chains</div>
                         </a>
                         </div>
-                        <!-- /Journey Item 
-        
+                        <!-- /Journey Item -->
+                        
+                        <!-- Journey Item -->
+                        <div class="column is-3">
+                        <a href="#popup">
+                            <div id="journey-button-4" class="journey-box shadow-hover">
+                            <img class="image-box" src="assets/images/photos/journey-developers.jpg" alt="">
+                            </div>
+                        <div class="journey-name">For Developers</div>
+                        </a>
+                        </div>
+                        <!-- /Journey Item -->
+                            <a name="popup"></a>
+
                     </div>
-        
+<!-- Journey Pop-up -->
+              <div id="journey-popup-1" class="journey-popup">
+              <h2 class="title">For Token Buyers</h2>
+              <p class="light-text journey-popup-text mb-40">The Tokes (TKS) token sale, or Initial Exchange Offering (IEO), is happening January 2020.  Tokes is the native digital currency unit of the Multichain Ventures ecosystem - including the Tokes Platform, Cubed, EDEN, and Reli.  Tokes is not only the native transactional token of the Multichain Ventures ecosystem, but has a number of economic features built into the token protocol, including staking, burning, and discount models.  Learn more about the TKS token in our <a href="documents.html">supporting documentation</a><br>
+                <br>Tokes (TKS) are not only intended for transactional purposes at the point of sale and for ecommerce purchases - with payments that settle in seconds.  Holders of the token receive periodic allocations for staking (proof of stake: POS) Tokes in their mobile or desktop wallet.  For services like supply chain data entires via EDEN and for subscription based fees of Tokes Platform, Cubed, or Reli services, Tokes can be burned to reduce recurring costs.  Also, purchasing any or product service from Multichain Ventures using Tokes reduces the base cost of services.  Learn more in our <a href="documents.html">Tokenomics documentation</a>.</p>
+                <div class="column has-text-centered">
+                <a href="tokensale.html" class="button button-cta is-bold btn-align secondary-btn raised token-button">
+                View Token Sale Page
+                </a></div>
+              </div>
+<!-- Journey Pop-up -->
+
+<!-- Journey Pop-up -->
+              <div id="journey-popup-2" class="journey-popup">
+              <h2 class="title">For Merchants</h2>
+              <p class="light-text journey-popup-text mb-40">The software produced by Multichain Ventures for digital currency processing eases merchant adoption of cryptocurrency for both point-of-sale and ecommerce sales.  The <a href="https://gateway.tokesplatform.org/login" target="_blank"><i>Merchant Gateway</i> </a>software fulfills merchant needs with an array of features including digital currency checkouts with real-time price conversions, full inventory management, stable asset trade processing (to avoid volatility), employee sales tracking, and integrations with popular ecommerce platforms.<br>
+                <br><a href="#portfolio">Cubed Pay</a> is the general merchant processing arm of Multichain Ventures - while the <a href="#portfolio">Tokes Platform</a> specifically serves the legal cannabis industry.
+</p>
+                <div class="column has-text-centered">
+                <a href="tokensale.html" class="button button-cta is-bold btn-align secondary-btn raised token-button">
+                View Token Sale Page
+                </a></div>
+              </div>
+<!-- Journey Pop-up -->
+
+<!-- Journey Pop-up -->
+              <div id="journey-popup-3" class="journey-popup">
+            <h2 class="title">For Supply Chains</h2>
+              <p class="light-text journey-popup-text mb-40">Multichain Ventures can decentralize supply chain data on an immutable ledger for trustless recording and visibility of event data, both within and across enterprises. This enables stakeholders to gain a shared view of physical (or digital) objects, as they travel throughout the supply chain, from business to business and ultimately to consumers.  <a href="#portfolio">Learn more about EDEN</a>, the supply chain focused branch of Multichain Ventures.</p>
+                <div class="column has-text-centered">
+                <a href="tokensale.html" class="button button-cta is-bold btn-align secondary-btn raised token-button">
+                View Token Sale Page
+                </a></div>
+              </div>
+<!-- Journey Pop-up -->
+
+<!-- Journey Pop-up -->
+              <div id="journey-popup-4" class="journey-popup">
+                 <h2 class="title">For Developers</h2>
+              <p class="light-text journey-popup-text mb-40"><a href="#portfolio">Reli.Cloud</a> (short for reliable) combines cutting edge open-source technologies into an accessible Platform as a Service, automating DevOps needs and application publishing with high availability, leveraging Kubernetes.  Reli enables teams to quickly deploy a number of software products, including blockchain infrastructure, with easy scalability. Whether you’re a single developer, or a large established enterprise, we have a solution for you.<br>
+                <br>
+                Discounts are granted for all Reli services when paying with the Tokes (TKS) token.</p>
+                <div class="column has-text-centered">
+                <a href="tokensale.html" class="button button-cta is-bold btn-align secondary-btn raised token-button">
+                View Token Sale Page
+                </a></div>
+              </div>
+<!-- Journey Pop-up -->
+       
 
                       </div>
                     </div>
@@ -634,10 +746,9 @@ Learn More                                </a> -->
                         <span></span>
                         <span></span>
                     </div>
-                  <h2 class="title is-2 dark-font">Multichain Ecosystem</h2>
-                    <h4 class="subtitle is-4 dark-font">Discover our Portfolio of TKS Token Integrated Software Products</h4>
+                  <h2 class="title is-2 dark-font">What is Multichain Ventures?</h2>
+                    <h4 class="subtitle is-4 dark-font">Multichain Ventures has an integrated ecosystem of software products with TKS token integrations at every step. <br>Learn about our portfolio of products below.</h4>
                 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
    
                 <!-- Content -->
                 <div id= "tabs" class="content-wrapper">
@@ -668,42 +779,47 @@ Learn More                                </a> -->
                             <div id="feature-1" class="showcase-text-wrapper animated preFadeInUp fadeInUp">
                                 <h3 class="title is-3 dark-font">Multichain Ventures</h3>
                                 <p>Multichain Ventures produces a number of blockchain focused products and services for payment processing, supply chain visibility, and DevOps infrastructure.  We leverage the bleeding edge of open source technology to provide solutions for any industry vertical.  Click any of the icons below to learn more about the brands in the Multichain portfolio.</p>
-                                <a href="#whitepaper" class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20">
+                                <a href="documents.html" class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20">
                                     Whitepaper
                                 </a>
                             </div>
                             <!-- Feature -->
                             <div id="feature-2" class="showcase-text-wrapper animated preFadeInUp fadeInUp is-hidden">
-                                <h3 class="title is-3 dark-font">Cubed</h3>
+                                <h3 class="title is-3 dark-font">What is Cubed?</h3>
+                                <p class="mb-10">Cubed is an off-the-shelf payment solution for merchants looking to offer their customers a crypto payments option. White label solutions are also available.</p>
+   
                                 <p>Cubed builds payment processing software for cryptocurrency adoptions in both physical brick and mortar businesses and for ecommerce.  This includes point of sale software, web checkout components, payment APIs, consumer wallets, and custom block explorers, with integrations to popular inventory management and CRM software.</p>
-                                <a href="https://cubedpay.io" target="_blank" class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20">
-                                    View Full Site
+                                <a href="cubed.html"  class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20">
+                                   Learn More
                                 </a>
                             </div>
 							                            <!-- Feature -->
                             <div id="feature-3" class="showcase-text-wrapper animated preFadeInUp fadeInUp is-hidden">
-                                <h3 class="title is-3 dark-font">Tokes Platform</h3>
+                                <h3 class="title is-3 dark-font">What is the Tokes Platform?</h3>
+                                <p class="mb-10">Tokes (TKS) is the crypto token that powers the Multichain Ventures ecosystem. It is an end-to-end merchant gateway platform for companies looking to offer their customers a crypto-payment option.</p>
                                 <p>Tokes Platform leverages blockchain technology to overcome hurdles within the legal cannabis industry.  Federal prohibition has resulted in a lack of banking options for licensed cannabis businesses. By leveraging decentralized blockchain technology, Tokes provides financial freedom to these entities and enhances supply chain visibility of cannabis goods for business stakeholders, regulators, and consumers.</p>
-                                <a href="https://tokesplatform.org" target="_blank" class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20">
-                                                                        View Full Site
+                                <a href="tokes.html" class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20">
+                                                                        Learn More
 
                                 </a>
                             </div>
 							                            <!-- Feature -->
                             <div id="feature-4" class="showcase-text-wrapper animated preFadeInUp fadeInUp is-hidden">
-                              <h3 class="title is-3 dark-font">EDEN</h3>
+                              <h3 class="title is-3 dark-font">What is EDEN?</h3>
+                              <p class="mb-10">Eden is a supply chain visibility toolset for the legal cannabis industry's unbanked business.</p>
                               <p>Multichain Ventures is developing the EPCIS compliant EDEN Blockchain to provide an immutable, decentralized ledger for supply chain visibility.  While this technology serves the cannabis vertical via the Tokes Platform, the EDEN blockchain is fundamentally industry agnostic and can serve to ensure the providence of goods ranging from agriculture to technology to high end consumer goods.</p>
-                                <a href="https://eden.software" target="_blank" class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20">
-                                                                        View Full Site
+                                <a href="eden.html" class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20">
+                                                                       Learn More
 
                                 </a>
                             </div>
                             <!-- Feature -->
                             <div id="feature-5" class="showcase-text-wrapper animated preFadeInUp fadeInUp is-hidden">
-                                <h3 class="title is-3 dark-font">Reli.cloud</h3>
+                                <h3 class="title is-3 dark-font">What is Reli.cloud?</h3>
+                                <p class="mb-10">Reli is a multi-cloud DevOps platform that provides development teams with open-source tools to automate and scale their blockchain infrastructure.</p>
                                 <p>Reli.cloud combines cutting edge open-source technologies into an accessible Platform as a Service, automating DevOps needs and application publishing with high availability.   Leveraging Kubernetes, Reli is multi-cloud, running on infrastructure including Amazon Web Services, Google Cloud Platform, and more.  Reli enables teams to quickly deploy a number of software products, including blockchain infrastructure, with easy scalability.</p>
-                                <a href="https://reli.cloud" target="_blank" class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20">
-                                View Full Site
+                                <a href="reli.html" class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20">
+                                Learn More
 								</a>
                             </div>
                         </div>
@@ -725,7 +841,6 @@ Learn More                                </a> -->
 						<a id="t5" class="slide-dot" data-feature="mockup-5" data-feature-text="feature-5">
                             <img src="assets/images/illustrations/icons/landing-v5/reli-dot.svg" alt="">
                         </a>
-                        <p id="token-sale"></p>
                     </div>
 <script type="text/javascript">
 
@@ -760,12 +875,88 @@ var timer = setInterval(function(){
 
 
 
-}, 3000);
+}, 5000);
 
  $('.slide-dot').on('click', function(){
        clearInterval(timer);
     });
     
+
+</script>
+
+ <script type="text/javascript">
+ 
+ $('#journey-button-1').click(function(){
+
+    if($(this).hasClass('active-journey')) {
+      $(this).removeClass('active-journey');
+      $('#journey-popup-1').removeClass("is-popup");
+      $('#journey-popup-1').siblings().removeClass("is-popup");}
+   
+    else {
+  $('#journey-button-1').addClass("active-journey");
+  $('#journey-button-2').removeClass("active-journey");
+  $('#journey-button-3').removeClass("active-journey");
+  $('#journey-button-4').removeClass("active-journey");
+
+  $('#journey-popup-1').addClass("is-popup");
+  $('#journey-popup-1').siblings().removeClass("is-popup");}
+}); 
+
+ $('#journey-button-2').click(function(){
+   
+    if($(this).hasClass('active-journey')) {
+      $(this).removeClass('active-journey');
+      $('#journey-popup-2').removeClass("is-popup");
+      $('#journey-popup-2').siblings().removeClass("is-popup");}
+   
+    else {
+  $('#journey-button-2').addClass("active-journey");
+  $('#journey-button-1').removeClass("active-journey");
+  $('#journey-button-3').removeClass("active-journey");
+  $('#journey-button-4').removeClass("active-journey");
+
+  $('#journey-popup-2').addClass("is-popup");
+  $('#journey-popup-2').siblings().removeClass("is-popup");}
+}); 
+
+ $('#journey-button-3').click(function(){
+   
+    if($(this).hasClass('active-journey')) {
+      $(this).removeClass('active-journey');
+      $('#journey-popup-3').removeClass("is-popup");
+      $('#journey-popup-3').siblings().removeClass("is-popup");}
+   
+    else {
+  $('#journey-button-3').addClass("active-journey");
+  $('#journey-button-1').removeClass("active-journey");
+  $('#journey-button-2').removeClass("active-journey");
+  $('#journey-button-4').removeClass("active-journey");
+
+  $('#journey-popup-3').addClass("is-popup");
+  $('#journey-popup-3').siblings().removeClass("is-popup");}
+}); 
+
+ $('#journey-button-4').click(function(){
+   
+    if($(this).hasClass('active-journey')) {
+      $(this).removeClass('active-journey');
+      $('#journey-popup-4').removeClass("is-popup");
+      $('#journey-popup-4').siblings().removeClass("is-popup");}
+   
+    else {
+  $('#journey-button-4').addClass("active-journey");
+  $('#journey-button-1').removeClass("active-journey");
+  $('#journey-button-2').removeClass("active-journey");
+  $('#journey-button-3').removeClass("active-journey");
+
+  $('#journey-popup-4').addClass("is-popup");
+  $('#journey-popup-4').siblings().removeClass("is-popup");}
+}); 
+
+
+
+
 
 </script>
                 </div>
@@ -775,21 +966,53 @@ var timer = setInterval(function(){
         
 
 <!-- Subscribe Section -->
-<section  class="section section-primary no-padding-bottom subscribe-section">
+<section  id="token-sale" class="section section-primary no-padding-bottom subscribe-section">
+                        
+                         <!-- Title -->
+                <div class="section-title-wrapper has-text-centered">
+
+                    <h2 class="title is-2">Multichain Ventures Token Sale</h2>
+                    <h4 class="subtitle is-4">Participate in our Token Sale opening soon.</h4>
+                </div>
+                
+            <div class="container" >
+            <div class="columns">
+            <div class="column has-text-centered">
+<a href="tokensale.html" class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20 token-button">
+                                    View Token Sale Page
+                                </a></div></div>
+
+              <p class="subtitle has-text-centered font-15"> TOKEN SALE BEGINS</h2>
+<div class="columns is-vcentered timer-block-container">
+                  <p id="demo2" class="subtitle has-text-centered font-timer"></p>
+
+                  <div class="column is-3 timer-block-outer"><span id="demo-days" class="subtitle has-text-centered font-timer block-timer "></span><span class="block-timer-label">days</span></div>
+                  <div class="column is-3 timer-block-outer"><span id="demo-hours" class="subtitle has-text-centered font-timer block-timer "></span><span class="block-timer-label">hours</span></div>
+                  <div class="column is-3 timer-block-outer"><span id="demo-minutes" class="subtitle has-text-centered font-timer block-timer "></span><span class="block-timer-label">mins</span></div>
+</div>
+
+
+
+</div>
             <div class="container" >
                 <div class="columns is-vcentered">
+
+
+
+
+
                     <!-- CTA content -->
                     <div class="column is-5 is-offset-1 subscribe-column">
                         <div class="minimal-feature">
                             <div class="feature-content light-text subscribe-text">
-                                The Multichain Ventures Token Sale is coming soon. Subscribe to our newsletter to stay tuned!
+                                The Multichain Ventures Token Sale is coming soon. Learn how Multichain is changing the game.
                             </div>                            
 
                         </div>
                         </div>
                         <div class="column is-5 is-offset-1 subscribe-column">
                         <div class="minimal-feature">
-                            <h2 class="title minimal-title bold-text light-text no-margin subscribe-title">Stay Tuned!</h2>
+                            <h2 class="title minimal-title bold-text light-text no-margin subscribe-title">Don't Miss Out!</h2>
 
                             <form id="token_signup" class="control subscribe-form klaviyo_gdpr_embed_JNzCxr" action="https://manage.kmail-lists.com/subscriptions/subscribe?g=JNzCxr" data-ajax-submit="https://manage.kmail-lists.com/ajax/subscriptions/subscribe?g=JNzCxr" method="GET" target="_blank" novalidate="novalidate">
                                 <input type="hidden" name="g" value="JNzCxr">
@@ -822,9 +1045,53 @@ var timer = setInterval(function(){
                     </div>
                     <!-- /CTA content -->
         
+</div></div>
 
-                </div>
-            </div>
+
+
+              <!-- Start Your Article Section -->
+            <div class="container">
+                
+                <!-- Content -->
+              <div class="content-wrapper">
+                    <div class="columns">
+                    <div class="column is-hidden-mobile"></div>
+                        <!-- Journey Item -->
+                        <div class="column is-5">
+                        <a href="https://www.forbes.com/sites/andrebourque/2019/02/28/how-blockchain-can-end-cannabis-looping-and-smurfing-schemes/#529b6346605f" target="_blank">
+                            <div class="journey-box shadow-hover">
+                            <img class="image-box" src="assets/images/photos/journey-investor.jpg" alt="">
+                            </div>
+                        <div class="journey-name light-text italic">"looping and smurfing schemes can be solved by leveraging a blockchain based system" - Forbes</div>
+                        </a>
+                        </div>
+                        <!-- /Journey Item -->
+
+                        <!-- Journey Item -->
+                        <div class="column is-3">
+                        <a href="https://bravenewcoin.com/insights/cannabis-industry-and-blockchain-from-outlaws-to-outliers" target="_blank">
+                            <div class="journey-box shadow-hover">
+                            <img class="image-box" src="assets/images/photos/journey-merchant.jpg" alt="">
+                            </div>
+                        <div class="journey-name light-text italic">"From Outlaws to Outliers" - Brave New Coin</div>
+                        </a>
+                        </div>
+                        <!-- /Journey Item -->
+
+                        <!-- Journey Item -->
+                        <div class="column is-3">
+                        <a href="https://www.greenentrepreneur.com/article/321351" target="_blank">
+                            <div class="journey-box shadow-hover">
+                            <img class="image-box" src="assets/images/photos/journey-crypto.jpg" alt="">
+                            </div>
+                        <div class="journey-name light-text italic">"regulatory compliance and quality" - Green Entrepreneur</div>
+                        </a>
+                        </div>
+                        <!-- /Journey Item  -->
+                      </div>  </div></div>
+
+
+
         </section>
 <!-- /Subscribe Section -->
 
@@ -837,61 +1104,79 @@ var timer = setInterval(function(){
         <div class="section is-medium">
             <div class="container">
         
-                <!-- Feature -->
 				        		<a name="tokenomics"></a>
 
-                <div class="columns is-vcentered">
+				      
+                <!-- Title -->
+                <div class="section-title-wrapper has-text-centered">
+
+                  <h2 class="title is-2 dark-font">Multichain Ventures Tokes (TKS) Token</h2>
+                    <h4 class="subtitle is-4 dark-font">All Multichain Ventures products and brands integrate Tokes.</h4>
+                </div>
+
+<div class="container slide-control-token">
+
+<!-- Tokenomics Contorls -->
+<div class="slide-controls">
+        <a id="token-button-1" onselectstart="return false" class="control-button active-tab">1</a>
+        <div class="control-separator"></div>
+        <a id="token-button-2" onselectstart="return false" class="control-button">2</a>
+        <div class="control-separator"></div>
+        <a id="token-button-3" onselectstart="return false" class="control-button">3</a>
+</div>
+<!-- /Tokenomics Contorls -->
+
+                <!-- Feature -->
+                <div id="token-feature-1" class="columns is-vcentered showcase-wrapper-token is-visible">
                     <div class="column is-7 has-text-centered">
                         <img class="featured-svg" src="assets/images/illustrations/drawings/mv-tokenomics-1.svg" alt="">
                     </div>
 
+
+
                     <div class="column is-5">
-                      <h3 class="detailed-feature-subtitle dark-font">MULTICHAIN TOKEN ECOSYSTEM</h3>
-                      <h2 class="title is-3 no-margin">Multichain Token Ecosystem</h2>
+                      <h3 class="detailed-feature-subtitle dark-font">1. MULTICHAIN TOKEN ECOSYSTEM</h3>
                         <div class="title-divider"></div>
-                        <span class="section-feature-description">The Tokes (TKS) token is the native transactional unit for the Multichain ecosystem of software products and has integrations with our industry partners (e.g., <a href=https://thechex.com/ target="_blank"">CHEX</a>, and <a href=https://vaultlogic.com/target="_blank"">Vault Logic</a>).  TKS serve as a low cost, fast, payment option within our products, and also transacts as the native fee unit for services like EDEN.</span>
+                        <span class="section-feature-description">The Tokes (TKS) token is the native transactional unit for the Multichain ecosystem of software products and has integrations with our industry partners (e.g., <a href=https://thechex.com/ target="_blank" style="color:red">CHEX</a>, and <a href=https://vaultlogic.com/target="_blank" style="color:red">Vault Logic</a>).  TKS serve as a low cost, fast, payment option within our products, and also spends as the native fee unit for services like EDEN.</span>
                         <div class="pt-10 pb-10">
-                            <a href="#" class="button btn-align btn-more is-link color-secondary">
+                            <a href="documents.html" class="button btn-align btn-more is-link color-secondary">
                                 Read the Multichain Whitepaper<i class="sl sl-icon-arrow-right"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <!-- /Feature -->
-        
-                <!-- Feature -->
-                <div class="columns is-vcentered">
-                    <div class="column is-7 has-text-centered is-hidden-tablet is-hidden-desktop">
+
+                                <!-- Feature -->
+                <div id="token-feature-2" class="columns is-vcentered showcase-wrapper-token">
+                    <div class="column is-7 has-text-centered">
                         <img class="featured-svg" src="assets/images/illustrations/drawings/mv-tokenomics-2.svg" alt="">
                     </div>
-        
-                    <div class="column is-5 has-text-right">
-                      <h3 class="detailed-feature-subtitle">TOKENOMICS</h3>
-                      <h2 class="title is-3 no-margin">Tokenomics</h2>
-                        <div class="title-divider is-right"></div>
-                        <span class="section-feature-description">Discounts for Multichain products and services will be given for holders of TKS, making the token more than just a transactional unit across our products. Our aim is to provide value to our customers through software services, with incentives to spend and hold TKS.  See a full breakdown of the TKS ecosystem with the link below.</span>
+
+
+
+                    <div class="column is-5">
+                      <h3 class="detailed-feature-subtitle dark-font">2. TOKENOMICS</h3>
+                        <div class="title-divider"></div>
+                        <span class="section-feature-description">CS
+Discounts for Multichain products and services will be given for holders of TKS, making the token more than just a transactional unit across our products. Our aim is to provide value to our customers through software services, with incentives to spend and hold TKS.  See a full breakdown of the TKS ecosystem with the link below.</span>
                         <div class="pt-10 pb-10">
-                            <a href="#" class="button btn-align btn-more is-link color-secondary">
-                                Read the TKS Tokenomics Paper<i class="sl sl-icon-arrow-right"></i>
+                            <a href="documents.html" class="button btn-align btn-more is-link color-secondary">
+                               Read the TKS Tokenomics Paper<i class="sl sl-icon-arrow-right"></i>
                             </a>
                         </div>
-                    </div>
-        
-                    <div class="column is-7 has-text-centered is-hidden-mobile">
-                        <img class="featured-svg" src="assets/images/illustrations/drawings/mv-tokenomics-2.svg" alt="">
                     </div>
                 </div>
                 <!-- /Feature -->
         
                 <!-- Feature -->
-                <div class="columns is-vcentered">
+                <div id="token-feature-3" class="columns is-vcentered showcase-wrapper-token">
                     <div class="column is-7 has-text-centered">
                         <img class="featured-svg" src="assets/images/illustrations/drawings/mv-tokenomics.svg" alt="">
                     </div>
         
                     <div class="column is-5">
-                      <h3 class="detailed-feature-subtitle">BLOCKCHAIN FOR ALL</h3>
-                      <h2 class="title is-3 no-margin">Blockchain for All</h2>
+                      <h3 class="detailed-feature-subtitle">3. BLOCKCHAIN FOR ANY INDUSTRY</h3>
                         <div class="title-divider"></div>
                         <span class="section-feature-description">While we brand some of our products products for specific business verticals, our team builds scalable blockchain solutions for any industry, and can white-label or tailor our solutions for your specific area of need.  From white-label payment options, to supply chain visibility tools, find out how Multichain can bring blockchain to your business.</span>
                         <div class="pt-10 pb-10">
@@ -902,159 +1187,84 @@ var timer = setInterval(function(){
                     </div>
                 </div>
                 <!-- /Feature -->
+</div>
+
+<script type="text/javascript">
+
+
+
+ $('#token-button-1').click(function(){
+
+  $('#token-button-1').addClass("active-tab");
+  $(this).siblings().removeClass("active-tab");
+  
+  $('#token-feature-1').addClass("is-visible");
+  $('#token-feature-2').removeClass("is-visible");
+  $('#token-feature-3').removeClass("is-visible");
+
+}); 
+
+
+$('#token-button-2').click(function(){
+
+  $('#token-button-2').addClass("active-tab");
+  $(this).siblings().removeClass("active-tab");
+
+  $('#token-feature-2').addClass("is-visible");
+  $('#token-feature-1').removeClass("is-visible");
+  $('#token-feature-3').removeClass("is-visible");
+
+}); 
+
+
+$('#token-button-3').click(function(){
+
+  $('#token-button-3').addClass("active-tab");
+  $(this).siblings().removeClass("active-tab");
+  
+  $('#token-feature-3').addClass("is-visible");
+  $('#token-feature-1').removeClass("is-visible");
+  $('#token-feature-2').removeClass("is-visible");
+
+}); 
+
+</script>
+
+
+
+
+
+
+
         
-                <!-- CTA -->
-                <h2 class="has-text-centered">
-                                <a href="#contact" class="button button-cta is-bold btn-align secondary-btn raised">
-                                    Contact Us
-                                </a>
-                </h2>
-                <!-- /CTA -->
         
-            </div>
+        <!-- CTA -->
+        <h2 class="has-text-centered">
+            <a href="#contact" class="button button-cta is-bold btn-align secondary-btn raised">
+                Contact Us
+            </a>
+        </h2>
+        <!-- /CTA -->
+        
+          </div>
         </div>
         <!-- /Side Features Section -->
         
-        <!-- Team Section -->
-		<a name="team"></a>
-        <div class="section section-feature-grey is-medium has-background-image is-contain" data-background="assets/images/bg/shapes/circles-and-shapes.png">
+ 
+        
+        <!-- Clients Section -->
+        <div class="section is-medium no-line-bottom wavy-bottom">
             <div class="container">
-                <!-- Title -->
+            <!-- Title -->
                 <div class="section-title-wrapper has-text-centered">
                     <!-- Divider -->
                     <div class="special-divider">
                         <span></span>
                         <span></span>
                     </div>
-                    <h2 class="title is-2 dark-font">Team Members</h2>
-                    <h4 class="subtitle is-4 dark-font">The Multichain Leadership Team.</h4>
+                    <h2 class="title is-2 dark-font">Collaborators</h2>
+                    <h4 class="subtitle is-4 dark-font">The Multichain Ventures Collaborators and Partnerships.</h4>
                 </div>
-                
-                <!-- Content -->
-              <div class="content-wrapper">
-                    <div class="columns">
-                        <div class="column is-hidden-mobile"></div>
-                        <!-- Team member -->
-                        <div class="column is-3">
-                            <div class="hero-box has-text-centered">
-                                <img src="assets/images/headshots/mike.png" alt="">
-                                <div class="name">Michael Wagner, CFA</div>
-                                <div class="position">CEO | Founder</div>
-                                <div class="social">
-                                    <a href="https://twitter.com/BchainEconomics" target="_blank"><i class="fa fa-twitter"></i></a>
-                                    <a href="https://www.linkedin.com/in/wagnermt" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Team member -->
-                        <div class="column is-3">
-                            <div class="hero-box has-text-centered">
-                                <img src="assets/images/headshots/gabe.png" alt="">
-                                <div class="name">Gabriel Allred, PhD.</div>
-                                <div class="position">CCO | Founder</div>
-                                <div class="social">
-                                    <a href="https://twitter.com/Gabriel_Allred" target="_blank"><i class="fa fa-twitter"></i></a>
-                                    <a href="https://www.linkedin.com/in/gabrielallred/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Team member -->
-                        <div class="column is-3">
-                            <div class="hero-box has-text-centered">
-                                <img src="assets/images/headshots/thomas.png" alt="">
-                                <div class="name">Thomas Diab</div>
-                                <div class="position">Head of Business Development</div>
-                                <div class="social">
-                                    <a href="https://twitter.com/Multichain_Vent" target="_blank"><i class="fa fa-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="column is-hidden-mobile"></div>
-                    </div>
-        
-                <div class="columns">
-                        <div class="column is-hidden-mobile"></div>
-                        <!-- Team member -->
-                        <div class="column is-3">
-                            <div class="hero-box has-text-centered">
-                                <img src="assets/images/headshots/deb.png" alt="">
-                                <div class="name">Deb Lucas</div>
-                                <div class="position">COO</div>
-                                <div class="social">
-                                    <a href="https://www.linkedin.com/in/deb-lucas-b5b7124/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Team member -->
-                        <div class="column is-3">
-                            <div class="hero-box has-text-centered">
-                                <img src="assets/images/headshots/jacob.png" alt="">
-                                <div class="name">Jacob Floyd</div>
-                                <div class="position">CTO</div>
-                                <div class="social">
-                                    <a href="https://github.com/bravetarget" target="_blank"><i class="fa fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Team member -->
-                        <div class="column is-3">
-                            <div class="hero-box has-text-centered">
-                                <img src="assets/images/headshots/michal.png" alt="">
-                                <div class="name">Michal Mikolajczyk</div>
-                                <div class="position">CIO</div>
-                                <div class="social">
-                                    <a href="https://www.linkedin.com/in/michal-mikolajczyk-4aa8b113/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                                    <a href="https://github.com/michalmikolajczyk" target="_blank"><i class="fa fa-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-						
-        
-                        <div class="column is-hidden-mobile"></div>
-                    </div>
-                    <div class="columns">
-                      <div class="column is-hidden-mobile"></div>
-                      <!-- Team member -->
-                      <div class="column is-3">
-                        <div class="hero-box has-text-centered"> <img src="assets/images/headshots/danny.png" alt="">
-                          <div class="name">Danny Floyd</div>
-                          <div class="position">CXO</div>
-                          <div class="social">
-                            <a href="https://www.linkedin.com/in/dannyfloyd/" target="_blank"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://github.com/bunthius" target="_blank"><i class="fa fa-github"></i></a>
-                        </div>
-                        </div>
-                      </div>
-                      <!-- Team member -->
-                      <div class="column is-3">
-                        <div class="hero-box has-text-centered"> <img src="assets/images/headshots/rafael.png" alt="">
-                          <div class="name">Rafael Aguirre Jimenez </div>
-                          <div class="position">Development Lead</div>
-                          <div class="social">
-                            <a href="https://github.com/rafaeloaguirre" target="_blank"><i class="fa fa-github"></i></a> </div>
-                        </div>
-                      </div>
-                      <!-- Team member -->
-                      <div class="column is-3">
-                        <div class="hero-box has-text-centered"> <img src="assets/images/headshots/eugene.png" alt="">
-                          <div class="name">Eugene Lopin</div>
-                          <div class="position">PM</div>
-                          <div class="social">
-                            <a href="https://www.linkedin.com/in/eugenelopin/" target="_blank"><i class="fa fa-linkedin"></i></a>                        
-                        </div>
-                        </div>
-                      </div>
-                      <div class="column is-hidden-mobile"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Team Section -->
-        
-        <!-- Clients Section -->
-        <div class="section is-medium no-line-bottom wavy-bottom">
-            <div class="container">
                 <div class="content-wrapper huge-pb">
                     <!-- Clients Grid -->
                     <div class="grid-clients three-grid">
@@ -1174,6 +1384,41 @@ var timer = setInterval(function(){
         </div>
         <!-- /Testimonials Section -->
         
+
+
+   
+        <!-- Contact Section -->
+		<a name="wallet"></a>
+        <div class="section is-medium section-feature-white">
+            <div class="container">
+                <!-- Title -->
+                <div class="section-title-wrapper has-text-centered">
+                    <!-- Divider -->
+                    <div class="columns">
+
+                      <div class="column is-5">
+                      <h2 class="title is-3 dark-font pb-40 pt-80">Download the Tokes Wallet Now.</h2>
+                      <h4 class="subtitle is-4 dark-font">Download the “Tokes Wallet” on iOS & Android phones and tablets.  Send payment to merchants or peer-to-peer.  Find vendors accepting Tokes.</h4>
+                      <a href="https://itunes.apple.com/us/app/tokes-wallet/id1402808821?mt=8" target="_blank"><img class="download-button" src="assets/images/illustrations/mockups/app-store.svg"></a>
+                      <a href="https://play.google.com/store/apps/details?id=com.multichainventures.tokeswallet" target="_blank"><img class="download-button" src="assets/images/illustrations/mockups/play-market.svg"></a>
+
+
+                      </div>
+
+                      <div class="column is-5">
+                      <img class="download-image" src="assets/images/illustrations/mockups/wallet-device.jpg">
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+                  
+
+
+
+
+
         <!-- Contact Section -->
 		<a name="contact"></a>
         <div class="section is-medium section-feature-grey">
@@ -1185,8 +1430,8 @@ var timer = setInterval(function(){
                         <span></span>
                         <span></span>
                     </div>
-                    <h2 class="title is-2 dark-font">Drop us a Line.</h2>
-                    <h4 class="subtitle is-4 dark-font">Ask us a question, or just say Hello.</h4>
+                    <h2 class="title is-2 dark-font">Interested in learning more?</h2>
+                    <h4 class="subtitle is-4 dark-font">Whether you're a token buyer, cryptocurrency project, merchant, or in need of supply chain visibility tools, we want to hear from you!</h4>
                 </div>
                 <div class="columns">
                     <div class="column is-6">
@@ -1196,26 +1441,40 @@ var timer = setInterval(function(){
                                 <div class="columns is-multiline">
                                     <div class="column is-6">
                                         <div class="control">
-                                            <label>First name *</label>
-                                            <input class="input is-medium" type="text" name="firstname">
+                                            <label>Name *</label>
+                                            <input class="input is-medium" type="text" name="name">
                                         </div>
                                     </div>
-                                    <div class="column is-6">
-                                        <div class="control">
-                                            <label>Last name *</label>
-                                            <input class="input is-medium" type="text" name="lastname">
-                                        </div>
-                                    </div>
+                                    <div class="column is-hidden-mobile"></div>
                                     <div class="column is-6">
                                         <div class="control">
                                             <label>Email *</label>
-                                            <input class="input is-medium" type="email" name="_replyto">
+                                            <input class="input is-medium" type="text" name="_replyto">
                                         </div>
                                     </div>
                                     <div class="column is-6">
                                         <div class="control">
-                                            <label>Company</label>
+                                            <label>Company *</label>
                                             <input class="input is-medium" type="text" name="company">
+                                        </div>
+                                    </div>
+                                    <div class="column is-6">
+                                        <div class="control">
+                                            <label>Area of Interest *</label>
+                                            <select class="input-select is-medium" name="interest">
+                                                  <option value="token-sale">Token Sale</option>
+                                                  <option value="merchant-services">Merchant Services</option>
+                                                  <option value="app-hosting">App Hosting</option>
+                                                  <option value="supply-chain">Supply Chain</option>
+                                                  <option value="general-inquiry">General Inquiry</option>
+                                                  <option value="technical-support">Technical Support</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="column is-6">
+                                        <div class="control">
+                                            <label>Industry *</label>
+                                            <input class="input is-medium" type="text">
                                         </div>
                                     </div>
                                     <div class="column is-12">
@@ -1334,8 +1593,11 @@ var timer = setInterval(function(){
                                     <li class="column-header">
                                         Multichain
                                     </li>
-                                    <li class="column-item"><a href="#portfolio">Portfolio</a></li>
-                                    <li class="column-item"><a href="#team">Team</a></li>
+                                    <li class="column-item"><a href="#token-sale">Token Sale</a></li>
+                                    <li class="column-item"><a href="#portfolio">Our Companies</a></li>
+                                    <li class="column-item"><a href="#tokenomics">Tokenomics</a></li>
+                                    <li class="column-item"><a href="https://medium.com/multichainventures">Blog</a></li>
+                                    <li class="column-item"><a href="documents.html">Whitepaper</a></li>
                                     <li class="column-item"><a href="#contact">Contact</a></li>
                                 </ul>
                             </div>
