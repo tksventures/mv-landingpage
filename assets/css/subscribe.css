@@ -1,3 +1,6 @@
+.token-font-title{
+    padding-bottom: 30px;
+}
 .download-button{
     width: 80%;
     margin: .5rem;
@@ -205,6 +208,9 @@ textarea:focus, input:focus{
 .subscribe-column {
     width: 50%;
 }
+
+.token-font-title{}
+
 
 }
 
