@@ -1,3 +1,14 @@
+.button-nav{
+
+}
+.button-nav-blue{}
+.button-nav:hover{
+background-color: #00edb1 !important;
+}
+.button-nav-blue:hover{
+    background-color: #1d2339ad !important;
+    box-shadow: 0 5px 12px #1d23396b;
+}
 .token-font-title{
     padding-bottom: 30px;
 }
@@ -396,6 +407,21 @@ select {
 
 
 @media screen and (min-width: 768px) {
+.button-nav{
+    font-weight: 600;
+    border-radius: 1000px;
+    padding: 0 1.25rem 0 1.25rem;
+    background-color: #00edb1;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    color: #1d2339;
+    }
+.button-nav-blue{
+    background-color: #1d2339ad;
+    color: white;
+    transition: box-shadow 1s;
+}
 .download-button{
     width: 46% !important;
     margin: 1.5%;
