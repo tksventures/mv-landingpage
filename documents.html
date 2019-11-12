@@ -673,7 +673,8 @@ Gateway Login                            </a>
                                     extra_properties: {
                                         $source: 'MultichainVenturesTokenSubscribe',
                                         Brand: 'MultichainVentures',
-                                    }
+                                    },
+                                    success: () => { fbq('track', 'Lead'); },
                                 });
                             </script>
                            

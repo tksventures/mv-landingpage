@@ -582,7 +582,8 @@ Learn More                                </a> -->
                                     extra_properties: {
                                         $source: 'MultichainVenturesSubscribe',
                                         Brand: 'MultichainVentures',
-                                    }
+                                    },
+                                    success: () => { fbq('track', 'Lead'); },
                                 });
                             </script> 
                         </div>
@@ -1086,7 +1087,8 @@ var timer = setInterval(function(){
                                     extra_properties: {
                                         $source: 'MultichainVenturesTokenSubscribe',
                                         Brand: 'MultichainVentures',
-                                    }
+                                    },
+                                    success: () => { fbq('track', 'Lead'); },
                                 });
                             </script>
 
