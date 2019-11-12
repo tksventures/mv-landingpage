@@ -623,7 +623,8 @@ var x = setInterval(function() {
                                     extra_properties: {
                                         $source: 'MultichainVenturesTokenSubscribe',
                                         Brand: 'MultichainVentures',
-                                    }
+                                    },
+                                    success: () => { fbq('track', 'Lead'); },
                                 });
                             </script>
                            
