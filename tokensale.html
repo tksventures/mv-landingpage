@@ -39,7 +39,18 @@
         <link rel="stylesheet" href="assets/css/subscribe.css">
 
 
-
+        <script>
+            !function(f,b,e,v,n,t,s)
+            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '560034901471687');
+            fbq('track', 'PageView');
+        </script>
     </head>
     <body>
 
@@ -1185,31 +1196,31 @@ var x = setInterval(function() {
                     <div class="column is-6">
                         <!-- Contact form -->
                         <div class="contact-form">
-                            <form action="https://formspree.io/mwgbnprm" method="POST">
+                            <form action="javascript:submitContact()">
                                 <div class="columns is-multiline">
                                     <div class="column is-6">
                                         <div class="control">
                                             <label>Name *</label>
-                                            <input class="input is-medium" type="text" name="name">
+                                            <input class="input is-medium" type="text" id="name" name="name">
                                         </div>
                                     </div>
                                     <div class="column is-hidden-mobile"></div>
                                     <div class="column is-6">
                                         <div class="control">
                                             <label>Email *</label>
-                                            <input class="input is-medium" type="text" name="_replyto">
+                                            <input class="input is-medium" type="text" id="email" name="_replyto">
                                         </div>
                                     </div>
                                     <div class="column is-6">
                                         <div class="control">
                                             <label>Company *</label>
-                                            <input class="input is-medium" type="text" name="company">
+                                            <input class="input is-medium" type="text" id="company" name="company">
                                         </div>
                                     </div>
                                     <div class="column is-6">
                                         <div class="control">
                                             <label>Area of Interest *</label>
-                                            <select class="input-select is-medium" name="interest">
+                                            <select class="input-select is-medium" id="interest" name="interest">
                                                   <option value="token-sale">Token Sale</option>
                                                   <option value="merchant-services">Merchant Services</option>
                                                   <option value="app-hosting">App Hosting</option>
@@ -1222,21 +1233,50 @@ var x = setInterval(function() {
                                     <div class="column is-6">
                                         <div class="control">
                                             <label>Industry *</label>
-                                            <input class="input is-medium" type="text">
+                                            <input class="input is-medium" id="industry" name="industry" type="text">
                                         </div>
                                     </div>
                                     <div class="column is-12">
                                         <div class="control">
                                             <label>Message *</label>
-                                            <textarea class="textarea" rows="4" name="message"></textarea>
+                                            <textarea class="textarea" rows="4" id="message" name="message"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <input type="hidden" name="_next" value="https://multichain.ventures"/>
                                 <div class="submit-wrapper">
-                                    <input type="submit" value="Send Message" class="button button-cta is-bold btn-align secondary-btn raised" style="padding-top:15px;padding-bottom:36px;" />
+                                    <input type="submit" id="contact-button" value="Send Message" class="button button-cta is-bold btn-align secondary-btn raised" style="padding-top:15px;padding-bottom:36px;" />
                                 </div>
                             </form>
+                            <div id="contact-thanks" style="display:none">Thank you!</div>
+                            <script>
+                                function submitContact(e) {
+                                    $.ajax({
+                                        url:'https://formspree.io/mwgbnprm',
+                                        method:'POST',
+                                        data:{
+                                            name: $('#name').val(),
+                                            _replyto: $('#email').val(),
+                                            company: $('#company').val(),
+                                            interest: $('#interest').val(),
+                                            industry: $('#industry').val(),
+                                            message: $('#message').val(),
+                                        },
+                                        dataType:"json",
+                                        success: () => {
+                                            fbq('track', 'Lead');
+                                            $('#name').val(''),
+                                            $('#email').val(''),
+                                            $('#company').val(''),
+                                            $('#interest').val(''),
+                                            $('#industry').val(''),
+                                            $('#message').val(''),
+                                            $('#contact-thanks').show();
+                                            $('#contact-button').hide();
+                                        }	
+                                    });
+                                }
+                            </script>
                         </div>
                     </div>
                     <div class="column is-5 is-offset-1">
