@@ -74,6 +74,52 @@
     </head>
     <body>
 
+<!-- /Pop up notification -->
+
+<div class="popup-sub-container">
+	<div class="popup-sub-bg">
+		<div class="popup-sub-modal">
+			<div class="popup-sub-title-container">
+			<img class="popup-sub-logo" src="assets/images/logos/mv-logo-white.svg">
+			<span class="popup-sub-title">Subscribe Now</span>
+			</div>
+			<div class="popup-sub-body"><span class="popup-sub-body-text">Enter your email below now to be notified of all important upcoming events.</span>
+			<form id="email_signup" class="control subscribe-form-top klaviyo_gdpr_embed_JNzCxr" action="https://manage.kmail-lists.com/subscriptions/subscribe?g=JNzCxr" data-ajax-submit="https://manage.kmail-lists.com/ajax/subscriptions/subscribe?g=JNzCxr" method="GET" target="_blank" novalidate="novalidate">
+                                <input type="hidden" name="g" value="JNzCxr">
+                                <input type="text" name="email" id="k_id_email" class="subscribe-input-top" placeholder="Enter your email">
+                                <div class="klaviyo_form_actions">
+                                    <button type="submit" class="button input-button subscribe-button-top">OK</button>
+                                </div>
+                                <div class="success_message subscribe-notify-top subscribe-notify-success-top" style="display: none;">
+                                    Thank you! Keep an eye out for updates!
+                                </div>
+                                <div class="error_message subscribe-notify-top subscribe-notify-failure-top" style="display: none;">
+                                    Not a valid email. Try again.
+                                </div>
+                            </form>
+                            <script type="text/javascript" src="https://www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
+                            <script type="text/javascript">
+                                KlaviyoSubscribe.attachToForms('#email_signup', {
+                                    custom_error_message: true,
+                                    custom_success_message: true,
+                                    extra_properties: {
+                                        $source: 'MultichainVenturesSubscribe',
+                                        Brand: 'MultichainVentures',
+                                    },
+                                    success: () => { fbq('track', 'Lead'); },
+                                });
+                            </script> 
+			<a class="hide-modal">Hide this window</a>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- /Pop up notification -->
+
+
+
         <!-- Hero and Navbar -->
         <div class="hero is-default is-bold is-fullheight hero-bg-img" style="background-image:url('assets/images/bg/poonhill.jpg')">
         
