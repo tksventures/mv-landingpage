@@ -40,7 +40,6 @@
         <link rel="stylesheet" href="assets/css/icons.min.css">
         <link rel="stylesheet" href="assets/css/core_blue.css">
         <link rel="stylesheet" href="assets/css/subscribe.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <!-- Facebook Pixel Code -->
 <script>
@@ -898,117 +897,142 @@ var x = setInterval(function() {
 
 
 
+const jqueryLoader = setInterval(() => {
+    if (typeof $ !== 'undefined' && $.isReady) {
+        onJqueryLoad();
+        clearInterval(jqueryLoader);
+    }
+}, 50);
 
-var dot = $(".slide-control > .slide-dot");
-var dotimage = $(".showcase-wrapper > .showcase-wrap");
-var dottext = $(".showcase-text-container > .showcase-text-wrapper");
+function onJqueryLoad() {
+    var dot = $(".slide-control > .slide-dot");
+    var dotimage = $(".showcase-wrapper > .showcase-wrap");
+    var dottext = $(".showcase-text-container > .showcase-text-wrapper");
 
 
-var timer = setInterval(function(){
+    var timer = setInterval(function(){
         
-  var cur = $(".slide-control > .is-active").index();
-  var curimage = $(".showcase-wrapper > .is-active").index();
-  var curtext = $(".showcase-text-container > .showcase-text-wrapper").index();
+        var cur = $(".slide-control > .is-active").index();
+        var curimage = $(".showcase-wrapper > .is-active").index();
+        var curtext = $(".showcase-text-container > .showcase-text-wrapper").index();
 
-  var nxt = (cur + 1) % dot.length;
-  var nxtimage = (cur + 1) % dotimage.length;
-  var nxttext = (cur + 1) % dottext.length;
+        var nxt = (cur + 1) % dot.length;
+        var nxtimage = (cur + 1) % dotimage.length;
+        var nxttext = (cur + 1) % dottext.length;
 
-  dot.eq(cur).removeClass("is-active");
-  dot.eq(nxt).addClass("is-active");
+        dot.eq(cur).removeClass("is-active");
+        dot.eq(nxt).addClass("is-active");
 
-  dotimage.eq(curimage).removeClass("is-active");
-  dotimage.eq(nxtimage).addClass("is-active");
+        dotimage.eq(curimage).removeClass("is-active");
+        dotimage.eq(nxtimage).addClass("is-active");
 
-  dottext.eq(curtext).removeClass("is-hidden");
-  dottext.eq(curtext).siblings().removeClass("is-hidden");
-  dottext.eq(nxttext).siblings().addClass("is-hidden");
+        dottext.eq(curtext).removeClass("is-hidden");
+        dottext.eq(curtext).siblings().removeClass("is-hidden");
+        dottext.eq(nxttext).siblings().addClass("is-hidden");
+    }, 5000);
 
-
-
-
-}, 5000);
-
- $('.slide-dot').on('click', function(){
+    $('.slide-dot').on('click', function(){
        clearInterval(timer);
     });
-    
 
-</script>
+    $('#journey-button-1').click(function(){
+        if($(this).hasClass('active-journey')) {
+            $(this).removeClass('active-journey');
+            $('#journey-popup-1').removeClass("is-popup");
+            $('#journey-popup-1').siblings().removeClass("is-popup");
+        } else {
+            $('#journey-button-1').addClass("active-journey");
+            $('#journey-button-2').removeClass("active-journey");
+            $('#journey-button-3').removeClass("active-journey");
+            $('#journey-button-4').removeClass("active-journey");
 
- <script type="text/javascript">
- 
- $('#journey-button-1').click(function(){
+            $('#journey-popup-1').addClass("is-popup");
+            $('#journey-popup-1').siblings().removeClass("is-popup");
+        }
+    }); 
 
-    if($(this).hasClass('active-journey')) {
-      $(this).removeClass('active-journey');
-      $('#journey-popup-1').removeClass("is-popup");
-      $('#journey-popup-1').siblings().removeClass("is-popup");}
-   
-    else {
-  $('#journey-button-1').addClass("active-journey");
-  $('#journey-button-2').removeClass("active-journey");
-  $('#journey-button-3').removeClass("active-journey");
-  $('#journey-button-4').removeClass("active-journey");
+    $('#journey-button-2').click(function(){
+        if($(this).hasClass('active-journey')) {
+            $(this).removeClass('active-journey');
+            $('#journey-popup-2').removeClass("is-popup");
+            $('#journey-popup-2').siblings().removeClass("is-popup");
+        } else {
+            $('#journey-button-2').addClass("active-journey");
+            $('#journey-button-1').removeClass("active-journey");
+            $('#journey-button-3').removeClass("active-journey");
+            $('#journey-button-4').removeClass("active-journey");
 
-  $('#journey-popup-1').addClass("is-popup");
-  $('#journey-popup-1').siblings().removeClass("is-popup");}
-}); 
+            $('#journey-popup-2').addClass("is-popup");
+            $('#journey-popup-2').siblings().removeClass("is-popup");}
+        });
 
- $('#journey-button-2').click(function(){
-   
-    if($(this).hasClass('active-journey')) {
-      $(this).removeClass('active-journey');
-      $('#journey-popup-2').removeClass("is-popup");
-      $('#journey-popup-2').siblings().removeClass("is-popup");}
-   
-    else {
-  $('#journey-button-2').addClass("active-journey");
-  $('#journey-button-1').removeClass("active-journey");
-  $('#journey-button-3').removeClass("active-journey");
-  $('#journey-button-4').removeClass("active-journey");
+    $('#journey-button-3').click(function(){
+        if($(this).hasClass('active-journey')) {
+            $(this).removeClass('active-journey');
+            $('#journey-popup-3').removeClass("is-popup");
+            $('#journey-popup-3').siblings().removeClass("is-popup");
+        } else {
+            $('#journey-button-3').addClass("active-journey");
+            $('#journey-button-1').removeClass("active-journey");
+            $('#journey-button-2').removeClass("active-journey");
+            $('#journey-button-4').removeClass("active-journey");
 
-  $('#journey-popup-2').addClass("is-popup");
-  $('#journey-popup-2').siblings().removeClass("is-popup");}
-}); 
+            $('#journey-popup-3').addClass("is-popup");
+            $('#journey-popup-3').siblings().removeClass("is-popup");
+        }
+    });
 
- $('#journey-button-3').click(function(){
-   
-    if($(this).hasClass('active-journey')) {
-      $(this).removeClass('active-journey');
-      $('#journey-popup-3').removeClass("is-popup");
-      $('#journey-popup-3').siblings().removeClass("is-popup");}
-   
-    else {
-  $('#journey-button-3').addClass("active-journey");
-  $('#journey-button-1').removeClass("active-journey");
-  $('#journey-button-2').removeClass("active-journey");
-  $('#journey-button-4').removeClass("active-journey");
+    $('#journey-button-4').click(function(){
+        if($(this).hasClass('active-journey')) {
+            $(this).removeClass('active-journey');
+            $('#journey-popup-4').removeClass("is-popup");
+            $('#journey-popup-4').siblings().removeClass("is-popup");
+        } else {
+            $('#journey-button-4').addClass("active-journey");
+            $('#journey-button-1').removeClass("active-journey");
+            $('#journey-button-2').removeClass("active-journey");
+            $('#journey-button-3').removeClass("active-journey");
 
-  $('#journey-popup-3').addClass("is-popup");
-  $('#journey-popup-3').siblings().removeClass("is-popup");}
-}); 
+            $('#journey-popup-4').addClass("is-popup");
+            $('#journey-popup-4').siblings().removeClass("is-popup");
+        }
+    });
 
- $('#journey-button-4').click(function(){
-   
-    if($(this).hasClass('active-journey')) {
-      $(this).removeClass('active-journey');
-      $('#journey-popup-4').removeClass("is-popup");
-      $('#journey-popup-4').siblings().removeClass("is-popup");}
-   
-    else {
-  $('#journey-button-4').addClass("active-journey");
-  $('#journey-button-1').removeClass("active-journey");
-  $('#journey-button-2').removeClass("active-journey");
-  $('#journey-button-3').removeClass("active-journey");
+    $('#token-button-1').click(function(){
 
-  $('#journey-popup-4').addClass("is-popup");
-  $('#journey-popup-4').siblings().removeClass("is-popup");}
-}); 
+        $('#token-button-1').addClass("active-tab");
+        $(this).siblings().removeClass("active-tab");
+
+        $('#token-feature-1').addClass("is-visible");
+        $('#token-feature-2').removeClass("is-visible");
+        $('#token-feature-3').removeClass("is-visible");
+
+    }); 
 
 
+    $('#token-button-2').click(function(){
+
+        $('#token-button-2').addClass("active-tab");
+        $(this).siblings().removeClass("active-tab");
+
+        $('#token-feature-2').addClass("is-visible");
+        $('#token-feature-1').removeClass("is-visible");
+        $('#token-feature-3').removeClass("is-visible");
+
+    }); 
 
 
+    $('#token-button-3').click(function(){
+
+        $('#token-button-3').addClass("active-tab");
+        $(this).siblings().removeClass("active-tab");
+
+        $('#token-feature-3').addClass("is-visible");
+        $('#token-feature-1').removeClass("is-visible");
+        $('#token-feature-2').removeClass("is-visible");
+
+    }); 
+}
 
 </script>
                 </div>
@@ -1088,7 +1112,7 @@ var timer = setInterval(function(){
                                         $source: 'MultichainVenturesTokenSubscribe',
                                         Brand: 'MultichainVentures',
                                     },
-                                    success: () => { fbq('track', 'Lead'); },
+                                    success: () => { fbq('track', 'Lead'); }
                                 });
                             </script>
 
@@ -1240,47 +1264,6 @@ var timer = setInterval(function(){
                 </div>
                 <!-- /Feature -->
 </div>
-
-<script type="text/javascript">
-
-
-
- $('#token-button-1').click(function(){
-
-  $('#token-button-1').addClass("active-tab");
-  $(this).siblings().removeClass("active-tab");
-  
-  $('#token-feature-1').addClass("is-visible");
-  $('#token-feature-2').removeClass("is-visible");
-  $('#token-feature-3').removeClass("is-visible");
-
-}); 
-
-
-$('#token-button-2').click(function(){
-
-  $('#token-button-2').addClass("active-tab");
-  $(this).siblings().removeClass("active-tab");
-
-  $('#token-feature-2').addClass("is-visible");
-  $('#token-feature-1').removeClass("is-visible");
-  $('#token-feature-3').removeClass("is-visible");
-
-}); 
-
-
-$('#token-button-3').click(function(){
-
-  $('#token-button-3').addClass("active-tab");
-  $(this).siblings().removeClass("active-tab");
-  
-  $('#token-feature-3').addClass("is-visible");
-  $('#token-feature-1').removeClass("is-visible");
-  $('#token-feature-2').removeClass("is-visible");
-
-}); 
-
-</script>
 
 
 
