@@ -4,7 +4,7 @@
 }
 .subscribe-form-popup{
     padding: 5% 10% 2% 10%;
-    border-radius: 4px;
+    border-radius: 0px 0px 4px 4px;
     background-image: url(images/sub-popup-bg.svg);
     background-size: cover;
 }
