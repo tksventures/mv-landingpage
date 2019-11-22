@@ -3,10 +3,12 @@
     height: auto !important;
 }
 .subscribe-form-popup{
-    background-color: #00edb1;
+    /* background-color: #00edb1; */
     padding: 5% 10% 2% 10%;
     border-radius: 4px;
     /* display: block !important; */
+    background-image: url(images/sub-popup-bg.svg);
+    background-size: cover;
 }
 .popup-sub-logo-img{
     height: 20px;
