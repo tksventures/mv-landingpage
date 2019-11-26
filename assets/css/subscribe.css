@@ -1,9 +1,125 @@
+.display-block-popup{
+    display: block !important;
+    height: auto !important;
+}
+.subscribe-form-popup{
+    padding: 5% 10% 2% 10%;
+    border-radius: 0px 0px 4px 4px;
+    background-image: url(images/sub-popup-bg.svg);
+    background-size: cover;
+}
+.popup-sub-logo-img{
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.popup-sub-container{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    color: #1d2339;
+
+}
+.popup-sub-bg{
+    background-color: #1d2339a8;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup-sub-modal{
+    background-color: white;
+    border-radius: 4px;
+    max-width: 600px;
+    border: 1px solid #1d2339;
+    box-shadow: 0px 20px 40px #1d2339;
+    height: auto;
+}
+.popup-sub-title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 5%;
+}
+.popup-sub-logo{
+    text-align: center;
+}
+.popup-sub-title-container{
+    color: #1d2339;
+    padding: 12px;
+    border-radius: 4px 4px 0 0;
+}
+.popup-sub-body{
+
+}
+.hide-modal{
+    text-transform: uppercase;
+    margin-top: 5%;
+    color: #1d233991;
+    text-align: center;
+    font-weight: 700;
+    font-size: .8rem;
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 20%;
+}
+.hide-modal:hover{
+    color: #1d2339;
+}
+
+.popup-sub-body-text{
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.subscribe-input-popup{
+    border-radius: 4px;
+    border: 1px solid grey;
+    width: 100%;
+    height: 46px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.subscribe-button-popup{
+    background-color: #1d2339 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    margin-top: 0px;
+    height: 46px;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    padding-top: 12px;
+    text-align: center;
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+    transition: box-shadow 0.5s;
+    }
+.subscribe-button-popup:hover{
+    box-shadow: 0 9px 15px #1d2339b8;
+}
+.subscribe-notify-success-popup{
+    position: inherit !important;
+    top: 0px !important;
+    color: #1d2339 !important;
+}
+.subscribe-notify-failure-popup{
+    position: inherit !important;
+    top: 0px !important;
+    color: #ff2627 !important;
+}
+
 .button-nav{
 
 }
 .button-nav-blue{}
 .button-nav:hover{
-background-color: #00edb1 !important;
+
+background-color: #00edb1 !important;
 }
 .button-nav-blue:hover{
     background-color: #1d2339ad !important;
@@ -31,16 +147,11 @@
     border-radius: 12px;
     padding: 3rem;
     margin-bottom: 2rem;
-    /* border: 1px solid #a9abac; */
     background-image: url(images/circles-and-shapes-w.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     display:none;
-    /* height: 0px; */
-    /* transition: height 1s; */
-    /* visibility: hidden; */
-    /* opacity: 1; */
     overflow: hidden;
     }
 
@@ -50,12 +161,11 @@
 .journey-wrapper{}
 .active-journey{
     border: 1px solid #00edb1 !important;
-    /* background: #00edb1 !important; */
     box-shadow: 0px 10px 20px #00edb159;
 }
 .active-journey:hover{    box-shadow: 0px 10px 20px #00edb159 !important;
 }
-.is-popup{display:block;/* height: 330px; *//* visibility: visible; *//* opacity: 1; */}
+.is-popup{display:block;}
 .embed-site{
     height: calc(100vh - 4.6rem);
 }
@@ -76,14 +186,12 @@
     background-color: white;
     border-radius: 312px;
     margin-left: 10%;
-    /* margin-right: 2rem; */
     margin-bottom: 2rem;
     width: 80% !important;
 }
 .block-timer{
     background-color: #00edb1;
     border-radius: 399px;
-    /* width: 200px; */
     padding-left: 20px;
     padding-right: 20px;
     line-height: 3rem;
@@ -99,7 +207,6 @@
     color: #1d2339;
     padding-left: .85rem;
     text-transform: uppercase;
-    /* padding-bottom: 1rem; */
     position: relative;
     top: -.35rem;
 }
@@ -117,9 +224,7 @@
 .subscribe-text {
     font-size: 1.4rem;
     font-weight: 400;
-    /* margin-top: -68px; */
     font-style: italic;
-    /* padding-top: 15px; */
 }
 .subscribe-title {
     font-size: 2rem;
@@ -205,7 +310,109 @@ textarea:focus, input:focus{
 
 
 
+@media screen and (max-width: 768px) {
+.display-block-popup{
+    display: block !important;
+    height: auto !important;
+}
+.subscribe-form-popup{
+    background-color: #00edb1;
+    padding: 5% 10% 2% 10%;
+    border-radius: 4px;
+}
+.popup-sub-logo-img{
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.popup-sub-container{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+    color: #1d2339;
 
+}
+.popup-sub-bg{
+    background-color: #1d2339a8;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.popup-sub-modal{
+    background-color: white;
+    border-radius: 4px;
+    width: 76%;
+    min-height: 300px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 200PX;
+    border: 1px solid #1d2339;
+    box-shadow: 0px 20px 40px #1d2339;
+}
+.popup-sub-title{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 5%;
+}
+.popup-sub-logo{
+    text-align: center;
+}
+.popup-sub-title-container{
+    color: #1d2339;
+    padding: 12px;
+    border-radius: 4px 4px 0 0;
+}
+.popup-sub-body{
+
+}
+.hide-modal{
+    text-transform: uppercase;
+    margin-top: 5%;
+    color: #1d233991;
+    text-align: center;
+    font-weight: 700;
+    font-size: .8rem;
+    width: 60%;
+    display: inline-block;
+    text-align: center;
+    margin-left: 20%;
+}
+
+.popup-sub-body-text{
+    padding-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.subscribe-input-popup{
+    border-radius: 4px;
+    border: 1px solid grey;
+    width: 100%;
+    height: 46px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.subscribe-button-popup{
+    background-color: #1d2339 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+    margin-top: 0px;
+    height: 46px;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    padding-top: 12px;
+    text-align: center;
+    width: 70%;
+    margin-right: 15%;
+    margin-left: 15%;
+    }
+.subscribe-button-popup:hover{}
+.subscribe-notify-success-popup{}
+.subscribe-notify-failure-popup{}
+
+    
+}
 
 
 
@@ -226,17 +433,12 @@ textarea:focus, input:focus{
 }
 
 
-
-
-
 .subscribe-column-top{
-    /* padding-left: 0px; */
 }
 
 .subscribe-title-top {
     font-size: 1.25rem;
     padding-bottom: 11px;
-    /* padding-left: 20px; */
     text-shadow: 0 3px rgba(29,35,57,0.1);
 }
 .subscribe-input-top {
@@ -253,7 +455,6 @@ textarea:focus, input:focus{
     color: #1d2339;
     max-width: 100%;
     width: 100%;
-    /* box-shadow: none !important; */
     border: 3px solid #ffffff;
     box-shadow: 0 3px rgba(29,35,57,0.1);
 }
@@ -267,7 +468,6 @@ textarea:focus, input:focus{
     font-weight: 900;
     color: #1d2339;
     border-color: white;
-    /* margin-left: -7px; */
     padding-left: 9px;
     box-shadow: 0 3px rgba(29,35,57,0.1);
 }
@@ -335,7 +535,6 @@ textarea:focus, input:focus{
 .journey-name{
     font-size: 1.4rem;
     font-weight: 500;
-    /* padding-left: 20px; */
     padding-top: 10px;
     color: #1d2339;
     text-align: center;
@@ -369,7 +568,6 @@ textarea:focus, input:focus{
     box-shadow: inset 0 1px 2px rgba(10,10,10,0.1);
     max-width: 100%;
     width: 100%;
-    /* padding: 5px; */
     font-size: 1rem;
     height: 2.5rem;
     border-radius: 1000px;
@@ -391,7 +589,7 @@ select {
 
 .is-visible {opacity:1;visibility:visible !important;height: auto;}
 
-.slide-controls{display:flex;/* width:100%; *//* align-content: center; */align-items: center;justify-content: center;}
+.slide-controls{display:flex;align-items: center;justify-content: center;}
 .control-button{background-color: #dbdbdb;width: 3rem;height: 3rem;color: white;border-radius: 1000px;text-align: center;font-size: 1.5rem;line-height: 2.75rem;font-weight: 700;margin: 10px;transition: box-shadow .5s, background-color .5s, width 1s;}
 .control-separator{background-color: #ededed;width: .35rem;height: .2rem;border-radius: 1000px;margin: 5px;}
 .active-tab{background-color: #1d2339;width: 4rem;box-shadow: 0px 6px 10px #1d23393b;}
@@ -425,7 +623,6 @@ select {
 .download-button{
     width: 46% !important;
     margin: 1.5%;
-    /* height: auto; */
 }
 
 .subscribe-text { margin-top:-20px
@@ -440,10 +637,8 @@ select {
 
 .timer-block-container{
     justify-content: center;
-    /* margin: 0px; */
     margin-top: 1rem;
     margin-bottom: 4rem !important;
-    /* width: 75%; */
 }
 
 .timer-block-outer{
