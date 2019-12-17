@@ -26,6 +26,16 @@ $(document).ready(function ($) {
         });
     }
 
+        if ($('.navbar-item').length) {
+        $('.navbar-item').on("click", function () {
+         
+            $('.custom-burger').toggleClass('is-active');
+            $('.icon-box-toggle').toggleClass('active');
+            $('.navbar-menu').toggleClass('is-active')
+        });
+    }
+
+
 
 
     //Highlight current page navbar menu item
@@ -134,6 +144,10 @@ $(document).ready(function ($) {
     $('.custom-burger').on('click', function () {
         $(this).find('.icon-box-toggle').toggleClass('active');
     })
+
+        $('.navbar-item').on('click', function () {
+       // $(document).find('.icon-box-toggle').removeClass('active');
+        $('navbar-menu').removeClass('active');    })
 
 
     //Navbar fade
