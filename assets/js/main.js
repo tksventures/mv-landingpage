@@ -29,9 +29,9 @@ $(document).ready(function ($) {
         if ($('.navbar-item').length) {
         $('.navbar-item').on("click", function () {
          
-            $('.custom-burger').toggleClass('is-active');
-            $('.icon-box-toggle').toggleClass('active');
-            $('.navbar-menu').toggleClass('is-active')
+            $('.custom-burger').removeClass('is-active');
+            $('.icon-box-toggle').removeClass('active');
+            $('.navbar-menu').removeClass('is-active')
         });
     }
 
