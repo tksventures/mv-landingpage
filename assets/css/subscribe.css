@@ -1,3 +1,9 @@
+.tall-box {
+    height: 500px;
+}
+.short-box {
+    /* height: 250px; */
+}
 .display-block-popup{
     display: block !important;
     height: auto !important;
@@ -551,11 +557,13 @@ textarea:focus, input:focus{
     border-radius: 4px;
 }
 
-.journey-box{padding: 20px;
+.journey-box{
+    padding: 20px;
     border-radius: 6px;
     width: 100%;
     background: #fff;
-    border: 1px solid #ededed;}
+    border: 1px solid #ededed;
+    }
 
 .italic{
     font-style: italic;
