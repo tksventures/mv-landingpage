@@ -317,6 +317,22 @@ textarea:focus, input:focus{
 
 
 @media screen and (max-width: 768px) {
+
+.subtitle-tweak{
+    margin-bottom: -9px !important;
+    margin-top: 20px !important;
+}
+.price-title{
+    color: #00edb1;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.bonus-container{}
+.bonus-description{}
+.bonus-amount{}
+.bonus-date{}
+
+
 .display-block-popup{
     display: block !important;
     height: auto !important;
