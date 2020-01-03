@@ -327,10 +327,46 @@ textarea:focus, input:focus{
     font-size: 2rem;
     font-weight: 700;
 }
-.bonus-container{}
-.bonus-description{}
-.bonus-amount{}
-.bonus-date{}
+.bonus-container{
+    border: 1px solid #00edb1;
+    border-radius: 8px;
+}
+.bonus-description{
+    background-color: #00edb1;
+    border-radius: 6px;
+    margin: .4rem;
+}
+.bonus-amount{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1d2339;
+    padding-left: 2rem;
+    padding-top: .3rem;
+    letter-spacing: -.1rem;
+}
+.bonus-date{
+    padding-left: 2rem;
+    margin-top: -.9rem;
+    padding-bottom: 1.25rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #1d2339;
+    letter-spacing: -.03rem;
+}
+.bonus-title{
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #00edb1;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .1rem;
+}
+.bonus-period{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #00edb1;
+}
 
 
 .display-block-popup{
