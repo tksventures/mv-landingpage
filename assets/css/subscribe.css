@@ -1,3 +1,97 @@
+.subtitle-tweak{
+    margin-bottom: -9px !important;
+    margin-top: 20px !important;
+}
+.price-title{
+    color: #00edb1;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.bonus-container{
+    border: 1px solid #00edb1;
+    border-radius: 8px;
+}
+.bonus-description{
+    background-color: #00edb1;
+    border-radius: 6px;
+    margin: .4rem;
+}
+.bonus-amount{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #1d2339;
+    padding-left: 2rem;
+    padding-top: .3rem;
+    letter-spacing: -.1rem;
+}
+.bonus-date{
+    padding-left: 2rem;
+    margin-top: -.9rem;
+    padding-bottom: 1.25rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #1d2339;
+    letter-spacing: -.03rem;
+}
+.bonus-title{
+    text-transform: uppercase;
+    font-size: .8rem;
+    font-weight: 700;
+    color: #00edb1;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .1rem;
+}
+.bonus-period{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #00edb1;
+}
+.bonus-blue{
+    color: #00BEED;
+}
+.bonus-blue2{
+    border: 1px solid #00BEED;
+}
+.bonus-blue3{
+    color: #00BEED;
+}
+.bonus-blue4{
+    background-color: #00BEED;
+}
+.bonus-yellow{
+    color: #EDDD00;
+}
+.bonus-yellow2{
+    border: 1px solid #EDDD00;
+}
+.bonus-yellow3{
+    color: #EDDD00;
+}
+.bonus-yellow4{
+    background-color: #EDDD00;
+}
+.bonus-white{
+    color: white;
+}
+.bonus-white2{
+    border: 1px solid white;
+}
+.bonus-white3{
+    color: white;
+}
+.bonus-white4{
+    background-color: white;
+}
+.bonus-footnote{
+    text-align: right;
+    color: white;
+    padding-bottom: 3rem;
+    margin-top: -1rem;
+}
+
+
 .tall-box {
     height: 500px;
 }
@@ -367,6 +461,8 @@ textarea:focus, input:focus{
     font-size: 4rem;
     font-weight: 700;
     color: #00edb1;
+    margin-top: -3rem;
+    margin-bottom: -1.5rem;
 }
 .bonus-blue{
     color: #00BEED;
