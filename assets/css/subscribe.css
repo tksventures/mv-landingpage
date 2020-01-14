@@ -849,4 +849,18 @@ select {
     width: 250px !important;
 }
 
+
+
+
+
+
 }
+
+
+@media screen and (max-width: 1087px) {
+.custom-burger {
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+}
+
