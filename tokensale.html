@@ -765,7 +765,10 @@ var x = setInterval(function() {
                                         $source: 'MultichainVenturesTokenSubscribe',
                                         Brand: 'MultichainVentures',
                                     },
-                                    success: () => { fbq('track', 'Lead'); },
+                                    success: () => { 
+                                        fbq('track', 'Lead');
+                                        fetch(`https://api.obelisk.ai/achievements/custom?token=3!dA@31*98&group_id=-1001303712448&email=${$('#k_id_email').val()}&achievement=13`);
+                                    },
                                 });
                             </script>
                            
