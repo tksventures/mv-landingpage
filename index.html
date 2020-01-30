@@ -105,7 +105,7 @@
                     Not a valid email. Try again.
                 </div>
                 <input type="hidden" name="g" value="JNzCxr">
-                <input type="text" name="email" id="k_id_email" class="subscribe-input-popup" placeholder="Enter your email">
+                <input type="text" name="email" id="popup_email" class="subscribe-input-popup" placeholder="Enter your email">
 
                 <div class="klaviyo_form_actions">
                     <button type="submit" class="button input-button subscribe-button-popup">SIGN ME UP!</button>
@@ -122,7 +122,11 @@
                         $source: 'MultichainVenturesSubscribePopup',
                         Brand: 'MultichainVentures',
                     },
-                    success: () => { fbq('track', 'Lead'); setTimeout(hideModal, 750); }
+                    success: () => { 
+                        fbq('track', 'Lead');
+                        setTimeout(hideModal, 750);
+                        registerAchievement($('#popup_email').val());
+                    }
                 });
             </script> 
 
@@ -633,7 +637,7 @@ Learn More                                </a> -->
 
                             <form id="email_signup" class="control subscribe-form-top klaviyo_gdpr_embed_JNzCxr" action="//manage.kmail-lists.com/subscriptions/subscribe?g=JNzCxr" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe?g=JNzCxr" method="GET" target="_blank" novalidate="novalidate">
                                 <input type="hidden" name="g" value="JNzCxr">
-                                <input type="text" name="email" id="k_id_email" class="subscribe-input-top" placeholder="Enter your email">
+                                <input type="text" name="email" id="sub_email" class="subscribe-input-top" placeholder="Enter your email">
                                 <div class="klaviyo_form_actions">
                                     <button type="submit" class="button input-button subscribe-button-top">OK</button>
                                 </div>
@@ -653,7 +657,10 @@ Learn More                                </a> -->
                                         $source: 'MultichainVenturesSubscribe',
                                         Brand: 'MultichainVentures',
                                     },
-                                    success: () => { fbq('track', 'Lead'); }
+                                    success: () => { 
+                                        fbq('track', 'Lead');
+                                        registerAchievement($('#sub_email').val());
+                                    }
                                 });
                             </script> 
                         </div>
@@ -671,12 +678,9 @@ Learn More                                </a> -->
 
 
                                                                     <p id="demo" class="subtitle has-text-centered font-timer"></p>
-<script type = "text/javascript">
-// Get timezone offset in minutes
-var dt = new Date();
-
+<script>
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 31, 2020 0:0:0 GMT+0000").getTime();
+var countDownDate = new Date("Jan 17, 2020 0:0:0").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -1132,6 +1136,10 @@ function hideModal(e) {
     $('.popup-sub-container').fadeOut(500);
 }
 
+function registerAchievement(email) {
+    fetch(`https://api.obelisk.ai/achievements/custom?token=3!dA@31*98&group_id=-1001303712448&email=${email}&achievement=13`);
+}
+
 </script>
                 </div>
             </div>
@@ -1146,7 +1154,7 @@ function hideModal(e) {
                 <div class="section-title-wrapper has-text-centered">
 
                     <h2 class="title is-2">Multichain Ventures Token Sale</h2>
-                    <h4 class="subtitle is-4">Participate in our upcoming Token Sale by registering at one of the participating exchanges below. <br>View Token Sale Schedule on the <a href="tokensale.html">Token Sale Page</a>.</h4>
+                    <h4 class="subtitle is-4">Participate in our Token Sale opening soon.</h4>
                 </div>
                 
             <div class="container" >
@@ -1156,66 +1164,7 @@ function hideModal(e) {
                                     View Token Sale Page
                                 </a></div></div>
 
-              
-
-
-</div>
-                    <!--<div class="container has-text-centered"><h4 class="subtitle is-4">Select from one of the participating exchanges below</h4></div>-->
-
-              <!-- Start Your Article Section -->
-            <div class="container mb-50">
-                
-                <!-- Content -->
-              <div class="content-wrapper">
-                    <div class="columns is-vcentered has-text-centered">
-                    
-                        <!-- Journey Item -->
-                        <div class="column is-one-third is-hidden-desktop is-hidden-tablet">
-                        <a href="https://www.probit.com/en-us/ieo/tks-round1/0" target="_blank">
-                            <div class="journey-box shadow-hover">
-                            <img class="image-box" src="assets/images/logos/exchanges/probit-short.jpg" alt="probit">
-                            </div>
-                        <!--<div class="journey-name light-text italic article-text">"...looping and smurfing schemes can be solved by leveraging a blockchain based system..." <br>– Forbes</div>-->
-                        </a>
-                        </div>
-                        <!-- /Journey Item -->
-
-                        <!-- Journey Item -->
-                        <div class="column is-one-third">
-                        <a href="https://p2pb2b.io/token-sale/TKS/1" target="_blank">
-                            <div class="journey-box shadow-hover">
-                            <img class="image-box" src="assets/images/logos/exchanges/p2pb2b-short.jpg" alt="p2pb2b">
-                            </div>
-                        <!-- <div class="journey-name light-text italic article-text">"From Outlaws to Outliers" <br>– Brave New Coin</div>-->
-                        </a>
-                        </div>
-                        <!-- /Journey Item -->
-
-                                                <!-- Journey Item -->
-                        <div class="column is-one-third is-hidden-mobile">
-                        <a href="https://www.probit.com/en-us/ieo/tks-round1/0" target="_blank">
-                            <div class="journey-box shadow-hover">
-                            <img class="image-box" src="assets/images/logos/exchanges/probit-tall.jpg" alt="probit">
-                            </div>
-                        <!--<div class="journey-name light-text italic article-text">"...looping and smurfing schemes can be solved by leveraging a blockchain based system..." <br>– Forbes</div>-->
-                        </a>
-                        </div>
-                        <!-- /Journey Item -->
-
-                        <!-- Journey Item -->
-                        <div class="column is-one-third">
-                        <a href="https://exchange.latoken.com/ieo/TKS" target="_blank">
-                            <div class="journey-box shadow-hover">
-                            <img class="image-box" src="assets/images/logos/exchanges/latoken-short.jpg" alt="latoken">
-                            </div>
-                        <!--<div class="journey-name light-text italic article-text">"...regulatory compliance and quality..." <br>– Green Entrepreneur</div>-->
-                        </a>
-                        </div>
-                        <!-- /Journey Item  -->
-                      </div>  </div>
-
-
-<p class="subtitle has-text-centered font-15 token-font-title pt-50"> TOKEN SALE BEGINS</h2>
+              <p class="subtitle has-text-centered font-15 token-font-title"> TOKEN SALE BEGINS</h2>
 <div class="columns is-vcentered timer-block-container">
                   <p id="demo2" class="subtitle has-text-centered font-timer"></p>
 
@@ -1226,11 +1175,8 @@ function hideModal(e) {
 
 
 
-                      </div>
-
-
-
-            <div class="container pb-80" >
+</div>
+            <div class="container" >
                 <div class="columns is-vcentered">
 
 
@@ -1252,7 +1198,7 @@ function hideModal(e) {
 
                             <form id="token_signup" class="control subscribe-form klaviyo_gdpr_embed_JNzCxr" action="//manage.kmail-lists.com/subscriptions/subscribe?g=JNzCxr" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe?g=JNzCxr" method="GET" target="_blank" novalidate="novalidate">
                                 <input type="hidden" name="g" value="JNzCxr">
-                                <input type="text" name="email" id="k_id_email" class="subscribe-input" placeholder="Enter your email">
+                                <input type="text" name="email" id="token_sub_email" class="subscribe-input" placeholder="Enter your email">
                                 <div class="klaviyo_form_actions">
                                     <button type="submit" class="button input-button subscribe-button">OK</button>
                                 </div>
@@ -1272,7 +1218,10 @@ function hideModal(e) {
                                         $source: 'MultichainVenturesTokenSubscribe',
                                         Brand: 'MultichainVentures',
                                     },
-                                    success: () => { fbq('track', 'Lead'); }
+                                    success: () => { 
+                                        fbq('track', 'Lead');
+                                        registerAchievement($('#token_sub_email').val());
+                                    }
                                 });
                             </script>
 
@@ -1286,14 +1235,14 @@ function hideModal(e) {
 
 
 
-              <!-- Start Your Article Section
-            <div class="container ">
+              <!-- Start Your Article Section -->
+            <div class="container">
                 
-                <!-- Content
+                <!-- Content -->
               <div class="content-wrapper">
                     <div class="columns mt-30 has-text-centered">
                     
-                        <!-- Journey Item
+                        <!-- Journey Item -->
                         <div class="column is-one-third">
                         <a href="https://www.forbes.com/sites/andrebourque/2019/02/28/how-blockchain-can-end-cannabis-looping-and-smurfing-schemes/#529b6346605f" target="_blank">
                             <div class="journey-box shadow-hover">
@@ -1302,9 +1251,9 @@ function hideModal(e) {
                         <div class="journey-name light-text italic article-text">"...looping and smurfing schemes can be solved by leveraging a blockchain based system..." <br>– Forbes</div>
                         </a>
                         </div>
-                        <!-- /Journey Item
+                        <!-- /Journey Item -->
 
-                        <!-- Journey Item
+                        <!-- Journey Item -->
                         <div class="column is-one-third">
                         <a href="https://bravenewcoin.com/insights/cannabis-industry-and-blockchain-from-outlaws-to-outliers" target="_blank">
                             <div class="journey-box shadow-hover">
@@ -1313,9 +1262,9 @@ function hideModal(e) {
                         <div class="journey-name light-text italic article-text">"From Outlaws to Outliers" <br>– Brave New Coin</div>
                         </a>
                         </div>
-                        <!-- /Journey Item
+                        <!-- /Journey Item -->
 
-                        <!-- Journey Item
+                        <!-- Journey Item -->
                         <div class="column is-one-third">
                         <a href="https://www.greenentrepreneur.com/article/321351" target="_blank">
                             <div class="journey-box shadow-hover">
@@ -1324,9 +1273,9 @@ function hideModal(e) {
                         <div class="journey-name light-text italic article-text">"...regulatory compliance and quality..." <br>– Green Entrepreneur</div>
                         </a>
                         </div>
-                       
+                        <!-- /Journey Item  -->
                       </div>  </div></div>
- <!-- /Journey Item  -->
+
 
 
         </section>
@@ -1503,27 +1452,11 @@ function hideModal(e) {
                             </div>
                             <!-- Client -->
                             <div class="column">
-                                <a href="http://tabu.co" target="_blank"><img class="client" src="assets/images/logos/partners/logo-tabu.png" alt=""></a>
-                            </div>
-                            <!-- Client -->
-                            <div class="column">
-                                <a href="https://www.medicalkiwi.com/" target="_blank"><img class="client" src="assets/images/logos/partners/medical-kiwi-logo.png" alt=""></a>
-                            </div>
-                            <div class="column"></div>
-                        </div>
-                        <div class="columns is-vcentered is-separator">
-                            <div class="column"></div>
-                            <!-- Client -->
-                            <div class="column">
-                                <a href="https://istio.io/" target="_blank"><img class="client" src="assets/images/logos/partners/logo-istio.png" alt=""></a>
-                            </div>
-                            <!-- Client -->
-                            <div class="column">
                                 <a href="https://kubernetes.io/" target="_blank"><img class="client" src="assets/images/logos/partners/logo-kubernetes.png" alt=""></a>
                             </div>
                             <!-- Client -->
                             <div class="column">
-                                <a href="https://www.vuestorefront.io/" target="_blank"><img class="client" src="assets/images/logos/partners/logo-vuestorefront.png" alt=""></a>
+                                <a href="https://www.medicalkiwi.com/" target="_blank"><img class="client" src="assets/images/logos/partners/medical-kiwi-logo.png" alt=""></a>
                             </div>
                             <div class="column"></div>
                         </div>
