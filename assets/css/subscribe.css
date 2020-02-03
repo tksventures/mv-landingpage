@@ -317,7 +317,7 @@ background-color: #00edb1 !important;
     margin-bottom: 0rem !important;
 }
 .timer-subtitle{
-    font-size: .9rem;
+    font-size: 1.55rem;
     margin-bottom: 0rem !important;
 }
 
@@ -398,8 +398,9 @@ textarea:focus, input:focus{
 
 
 .font-15 {
-    font-size: 15px;
+    font-size: 2rem;
     margin-bottom: 0px !important;
+    color: #00edb1;
 }
 
 

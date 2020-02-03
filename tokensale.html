@@ -523,7 +523,7 @@ Gateway Login                            </a>
            
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 31, 2020 0:0:0 GMT+0000").getTime();
+var countDownDate = new Date("Feb 4, 2020 0:0:0 GMT+0000").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -574,7 +574,7 @@ var x = setInterval(function() {
                 <div class="section-title-wrapper has-text-centered">
 
                     <h2 class="title is-2">Multichain Token Sale</h2>
-                    <h4 class="subtitle is-4">Participate in our upcoming Token Sale by registering at one of the participating exchanges below.</h4>
+                    <h4 class="subtitle is-4">Participate in our Token Sale by registering at one of the participating exchanges below.</h4>
                 </div>
                 
             <div class="container" >
@@ -643,7 +643,7 @@ var x = setInterval(function() {
                         <!-- /Journey Item  -->
                       </div>  </div>
 
-              <p class="subtitle has-text-centered font-15 token-font-title mt-50"> TOKEN SALE BEGINS</h2>
+              <p class="subtitle has-text-centered font-15 token-font-title mt-50">TOKEN SALE HAPPENING NOW - Phase 1 ends in...</p>
 <div class="columns is-vcentered timer-block-container">
                   <p id="demo2" class="subtitle has-text-centered font-timer"></p>
 
@@ -734,7 +734,7 @@ var x = setInterval(function() {
                     <div class="column is-5 is-offset-1 subscribe-column">
                         <div class="minimal-feature">
                             <div class="feature-content light-text subscribe-text">
-                                The Multichain Ventures Token Sale is coming soon. Learn how Multichain Ventures is changing the game.
+                                The Multichain Ventures Token Sale is happening now. Learn how Multichain Ventures is changing the game.
                             </div>                            
 
                         </div>
@@ -765,7 +765,10 @@ var x = setInterval(function() {
                                         $source: 'MultichainVenturesTokenSubscribe',
                                         Brand: 'MultichainVentures',
                                     },
-                                    success: () => { fbq('track', 'Lead'); },
+                                    success: () => { 
+                                        fbq('track', 'Lead');
+                                        fetch(`https://api.obelisk.ai/achievements/custom?token=3!dA@31*98&group_id=-1001303712448&email=${$('#k_id_email').val()}&achievement=13`);
+                                    },
                                 });
                             </script>
                            
@@ -1005,7 +1008,7 @@ var x = setInterval(function() {
               <h2 class="title">How to buy?</h2>
              <span class="mb-20"></span>
               <h4 class="subtitle"><b>1) How do I participate in the Tokes (TKS) token sale?</b></h4>
-              <p class="light-text journey-popup-text mb-40">Users will be able to participate with our upcoming exchange partner in January of 2020.  More specific details will be announced as the date approaches.  Interested buyers should expect a full KYC/AML process and will need to provide supporting documetnation to participate.  After the initial exchange offering, Tokes will be traded across multiple exchanges - agreements are already in place - which will be formally announced soon.</p>
+              <p class="light-text journey-popup-text mb-40">Users will be able to participate with our exchange partners in January of 2020.  More specific details will be announced as the date approaches.  Interested buyers should expect a full KYC/AML process and will need to provide supporting documetnation to participate.  After the initial exchange offering, Tokes will be traded across multiple exchanges - agreements are already in place - which will be formally announced soon.</p>
              <!--  <div class="column has-text-centered">
                 <a href="tokensale.html" class="button button-cta is-bold btn-align secondary-btn raised token-button">
                 View Token Sale Page
