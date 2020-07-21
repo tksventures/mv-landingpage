@@ -1,3 +1,12 @@
+.divider-left {
+    width: 20px;
+    border-right: 1px solid #0000002e;
+    height: 40px;
+    margin-top: 14px;
+}
+.divider-right {
+    width: 20px;
+}
 .subtitle-tweak{
     margin-bottom: -9px !important;
     margin-top: 20px !important;
@@ -218,8 +227,10 @@
 }
 .button-nav-blue{}
 .button-nav:hover{
-background-color: white !important;
-box-shadow: 0 8px 12px #0057ff2e;
+
+background-color: white !important;
+
+box-shadow: 0 8px 12px #0057ff2e;
 }
 .button-nav-blue:hover{
     background-color: #ffffffad !important;
@@ -662,7 +673,7 @@ textarea:focus, input:focus{
     padding: 0.5em 1em 1.5em 1em;
     font-weight: 600;
     margin-left: -20px;
-    margin-top: -2px;
+    margin-top: -2.1px;
     color: white;
 }
 
