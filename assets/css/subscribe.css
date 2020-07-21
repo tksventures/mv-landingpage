@@ -222,8 +222,8 @@
 background-color: #00edb1 !important;
 }
 .button-nav-blue:hover{
-    background-color: #1d2339ad !important;
-    box-shadow: 0 5px 12px #1d23396b;
+    background-color: #ffffffad !important;
+    box-shadow: 0 8px 12px #0057ff36;
 }
 .token-font-title{
     padding-bottom: 30px;
@@ -635,42 +635,38 @@ textarea:focus, input:focus{
 }
 
 .subscribe-title-top {
-    font-size: 1.25rem;
-    padding-bottom: 11px;
-    text-shadow: 0 3px rgba(29,35,57,0.1);
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    /* text-shadow: 0 3px rgba(29,35,57,0.1); */
 }
 .subscribe-input-top {
     position: relative;
     display: inline;
-    border-radius: 1000px 0px 0px 1000px;
-    padding-left: 1em;
-    padding-right: 1em;
+    border-radius: 8px 0px 0px 8px;
     transition: all 0.8s;
-    padding-bottom: 5px;
+    padding: 0 1em 0.5em 1em;
     font-size: 1.5rem;
     background-color: #ffffff;
-    border-color: #ffffff;
-    color: #1d2339;
+    color: #0057ff;
     max-width: 100%;
     width: 100%;
-    border: 3px solid #ffffff;
-    box-shadow: 0 3px rgba(29,35,57,0.1);
+    font-weight: 600;
+    border: 0px solid #ffffff;
+    border-bottom: 3px solid #0057ff;
 }
 .subscribe-button-top {
     position: relative;
     display: inline;
-    border-radius: 0px 1000px 1000px 0px;
-    font-size: 20px;
-    padding-top: 0px;
-    padding-bottom: 2px;
-    font-weight: 900;
-    color: #1d2339;
-    border-color: white;
-    padding-left: 9px;
-    box-shadow: 0 3px rgba(29,35,57,0.1);
+    border-radius: 4px;
+    font-size: 1.5rem;
+    padding: 0.5em 1em 1.5em 1em;
+    font-weight: 600;
+    margin-left: -20px;
+    margin-top: -2px;
+    color: white;
 }
 
-.subscribe-button-top:hover {background-color: #00e0b7;border-color: transparent;color: white;}
+.subscribe-button-top:hover {background-color: #ffffff;color: #0057ff;}
 .subscribe-notify-top {
     position: absolute;
     top: 50px;
@@ -708,7 +704,7 @@ textarea:focus, input:focus{
 
 .pad-title{
     padding-bottom: 12px;
-    font-size: 2.1rem !important;
+    font-size: 3.6rem !important;
 }
 
 
@@ -807,8 +803,8 @@ select {
 @media screen and (min-width: 768px) {
 .button-nav{
     font-weight: 600;
-    border-radius: 1000px;
-    padding: 0 1.25rem 0 1.25rem;
+    border-radius: 4px;
+    padding: 0 1.25rem 0.2rem 1.25rem;
     background-color: #00edb1;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -816,9 +812,9 @@ select {
     color: #1d2339;
     }
 .button-nav-blue{
-    background-color: #1d2339ad;
+    background-color: #0057ff;
     color: white;
-    transition: box-shadow 1s;
+    transition: box-shadow 0.6s;
 }
 .download-button{
     width: 46% !important;
