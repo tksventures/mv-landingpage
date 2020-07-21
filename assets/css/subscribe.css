@@ -218,8 +218,8 @@
 }
 .button-nav-blue{}
 .button-nav:hover{
-
-background-color: #00edb1 !important;
+background-color: white !important;
+box-shadow: 0 8px 12px #0057ff2e;
 }
 .button-nav-blue:hover{
     background-color: #ffffffad !important;
@@ -636,7 +636,7 @@ textarea:focus, input:focus{
 
 .subscribe-title-top {
     font-size: 1.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0.5rem;
     /* text-shadow: 0 3px rgba(29,35,57,0.1); */
 }
 .subscribe-input-top {
@@ -704,7 +704,8 @@ textarea:focus, input:focus{
 
 .pad-title{
     padding-bottom: 12px;
-    font-size: 3.6rem !important;
+    font-size: 4.3rem !important;
+    line-height: 4.25rem;
 }
 
 
@@ -805,11 +806,12 @@ select {
     font-weight: 600;
     border-radius: 4px;
     padding: 0 1.25rem 0.2rem 1.25rem;
-    background-color: #00edb1;
+    background-color: #0057ff;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 10px;
-    color: #1d2339;
+    color: white;
+    transition: box-shadow 0.6s;
     }
 .button-nav-blue{
     background-color: #0057ff;
