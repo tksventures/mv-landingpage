@@ -655,7 +655,7 @@ textarea:focus, input:focus{
     display: inline;
     /* border-radius: 8px 0px 0px 8px; */
     transition: all 0.8s;
-    padding: 0 1em 0.5em 1em;
+    padding: 0 -10em 0.5em 1em;
     font-size: 1.5rem;
     background-color: #ffffff;
     color: #0057ff;
@@ -672,9 +672,10 @@ textarea:focus, input:focus{
     font-size: 1.5rem;
     padding: 0.5em 1em 1.5em 1em;
     font-weight: 900;
-    margin-left: 20px;
-    margin-top: -2.1px;
+    margin-left: 12px;
+    margin-top: -3.1px;
     color: white;
+    /* border: 1px solid #0057ff; */
 }
 
 .subscribe-button-top:hover {background-color: #ffffff;color: #0057ff;}
