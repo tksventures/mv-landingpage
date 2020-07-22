@@ -254,11 +254,11 @@ box-shadow: 0 8px 12px #0057ff2e;
 }
 .smaller-title{}
 .journey-popup{
-    background-color: #1d2339;
+    background-color: #0057ff;
     border-radius: 12px;
     padding: 3rem;
     margin-bottom: 2rem;
-    background-image: url(images/circles-and-shapes-w.png);
+    /* background-image: url(images/circles-and-shapes-w.png); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -283,8 +283,8 @@ box-shadow: 0 8px 12px #0057ff2e;
 .blue-bg{background-color:#1D2339;}
 
 .token-button{
-    background-color: #00edb1 !important;
-    color: #1d2339 !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
     font-weight: 700 !important;
     margin-top: 0px;
 }
