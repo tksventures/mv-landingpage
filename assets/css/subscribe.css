@@ -1,3 +1,8 @@
+.section-card {
+    background-color: #ffffff;
+    padding: 1.5rem 2rem !important;
+    border-radius: 50px;
+}
 .footer-section {
     background-color: #0057ff !important;
     padding: 0rem 1.5rem !important;
@@ -237,8 +242,9 @@ background-color: white !important;
 box-shadow: 0 8px 12px #0057ff2e;
 }
 .button-nav-blue:hover{
-    background-color: #ffffffad !important;
+    background-color: #0057ff !important;
     box-shadow: 0 8px 12px #0057ff36;
+    color: white !important;
 }
 .token-font-title{
     padding-bottom: 30px;
@@ -832,7 +838,7 @@ select {
     transition: box-shadow 0.6s;
     }
 .button-nav-blue{
-    background-color: #0057ff;
+    background-color: #171717;
     color: white;
     transition: box-shadow 0.6s;
 }
