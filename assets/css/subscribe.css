@@ -672,7 +672,7 @@ textarea:focus, input:focus{
     width: 100%;
     font-weight: 600;
     border: 0px solid #ffffff;
-    border-bottom: 1px solid #0057ff;
+    border: 1px solid #0057ff;
     /* margin-right: 20px; */
 }
 .subscribe-button-top {
@@ -681,10 +681,10 @@ textarea:focus, input:focus{
     border-radius: 4px;
     font-size: 1.42rem;
     /* padding: 0.5em 1em 1.5em 1em; */
-    font-weight: 800;
+    font-weight: 600;
     margin-left: 12px;
     margin-top: -1px;
-    color: #000000;
+    color: #ffffff;
     padding-bottom: .6rem;
     /* border: 1px solid #0057ff; */
 }
