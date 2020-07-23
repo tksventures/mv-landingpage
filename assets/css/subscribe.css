@@ -662,9 +662,9 @@ textarea:focus, input:focus{
 .subscribe-input-top {
     position: relative;
     display: inline;
-    border-radius: 8px;
+    border-radius: 4px;
     transition: all 0.8s;
-    padding: 1rem;
+    padding: 0.6rem 1rem;
     font-size: 1rem;
     background-color: #ffffff;
     color: #0057ff;
@@ -678,17 +678,18 @@ textarea:focus, input:focus{
 .subscribe-button-top {
     position: relative;
     display: inline;
-    border-radius: 8px;
+    border-radius: 4px;
     font-size: 1.42rem;
     /* padding: 0.5em 1em 1.5em 1em; */
     font-weight: 800;
     margin-left: 12px;
     margin-top: -1px;
-    color: #0057ff;
+    color: #000000;
+    padding-bottom: .6rem;
     /* border: 1px solid #0057ff; */
 }
 
-.subscribe-button-top:hover {background-color: #0057ff;color: #ffffff;}
+.subscribe-button-top:hover {background-color: #000000;color: #ffffff;/* border: 1px solid white; */}
 .subscribe-notify-top {
     position: absolute;
     top: 50px;
