@@ -110,7 +110,7 @@
                 <div class="klaviyo_form_actions">
                     <button type="submit" class="button input-button subscribe-button-popup">SIGN ME UP!</button>
                 </div>
-                
+
                 <a class="hide-modal">Hide this window</a>
             </form>
             <script type="text/javascript" src="https://www.klaviyo.com/media/js/public/klaviyo_subscribe.js"></script>
@@ -122,13 +122,13 @@
                         $source: 'MultichainVenturesSubscribePopup',
                         Brand: 'MultichainVentures',
                     },
-                    success: () => { 
+                    success: () => {
                         fbq('track', 'Lead');
                         setTimeout(hideModal, 750);
                         registerAchievement($('#popup_email').val());
                     }
                 });
-            </script> 
+            </script>
 
 			</div>
 			</div>
@@ -142,7 +142,7 @@
 
         <!-- Hero and Navbar -->
         <div class="hero is-default is-bold is-fullheight">
-        
+
             <!-- Navbar partial -->
             <nav class="navbar navbar-wrapper is-cloned">
                 <div class="container">
@@ -154,29 +154,29 @@
 
                             <img src="assets/images/logos/mv-logo-navy-horizontal.svg" alt="">
                         </a>
-            
+
                         <!-- Sidebar Trigger
                         <a class="navbar-item hamburger-btn navigation-trigger" href="javascript:void(0);">
-                            <span class="menu-toggle">	
-                                <span class="icon-box-toggle"> 	
+                            <span class="menu-toggle">
+                                <span class="icon-box-toggle">
                                     <span class="rotate">
                                         <i class="icon-line-top"></i>
                                         <i class="icon-line-center"></i>
-                                        <i class="icon-line-bottom"></i> 
+                                        <i class="icon-line-bottom"></i>
                                     </span>
                                 </span>
                             </span>
                         </a>
-            
+
                         <!-- Responsive toggle -->
                         <div class="custom-burger" data-target="is-cloned">
                             <a class="responsive-btn" href="javascript:void(0);">
-                                <span class="menu-toggle">	
-                                    <span class="icon-box-toggle"> 	
+                                <span class="menu-toggle">
+                                    <span class="icon-box-toggle">
                                         <span class="rotate">
                                             <i class="icon-line-top"></i>
                                             <i class="icon-line-center"></i>
-                                            <i class="icon-line-bottom"></i> 
+                                            <i class="icon-line-bottom"></i>
                                         </span>
                                     </span>
                                 </span>
@@ -184,10 +184,10 @@
                         </div>
                         <!-- /Responsive toggle -->
                     </div>
-            
+
                     <!-- Navbar menu -->
                     <div id="is-cloned" class="navbar-menu">
-                       
+
                         <div class="navbar-end">
                                                     <!-- Navbar item -->
                             <!-- Navbar item -->
@@ -204,7 +204,7 @@
                         	<!-- Navbar item -->
                             <a class="navbar-item is-centered-tablet is-slide" href="#wallet">
                                 Wallet
-                            </a>   
+                            </a>
 							<!-- Navbar item -->
                             <a class="navbar-item is-slide is-centered-tablet" href="#contact">
                                 Contact
@@ -214,42 +214,42 @@
                             <a class="navbar-item is-centered-tablet button-nav" href="https://gateway.tokesplatform.org/login">
 Gateway Login                            </a>
 
- 
+
                         </div>
                     </div>
                 </div>
             </nav>
-            
-            <nav class="navbar navbar-wrapper is-transparent is-static">
+
+            <nav class="navbar navbar-wrapper" style="position: absolute !important;">
                 <div class="container">
                     <!-- Brand -->
                     <div class="navbar-brand">
                         <a class="navbar-item" href="#">
                             <img src="assets/images/logos/mv-logo-navy-horizontal.svg" alt="">
                         </a>
-            
+
                         <!-- Sidebar Trigger
                         <a id="navigation-trigger" class="navbar-item hamburger-btn" href="javascript:void(0);">
-                            <span class="menu-toggle">	
-                                <span class="icon-box-toggle"> 	
+                            <span class="menu-toggle">
+                                <span class="icon-box-toggle">
                                     <span class="rotate">
                                         <i class="icon-line-top"></i>
                                         <i class="icon-line-center"></i>
-                                        <i class="icon-line-bottom"></i> 
+                                        <i class="icon-line-bottom"></i>
                                     </span>
                                 </span>
                             </span>
                         </a>
-            
+
                         <!-- Responsive toggle -->
                         <div class="custom-burger" data-target="is-static">
                             <a class="responsive-btn" href="javascript:void(0);">
-                                <span class="menu-toggle">	
-                                    <span class="icon-box-toggle"> 	
+                                <span class="menu-toggle">
+                                    <span class="icon-box-toggle">
                                         <span class="rotate">
                                             <i class="icon-line-top"></i>
                                             <i class="icon-line-center"></i>
-                                            <i class="icon-line-bottom"></i> 
+                                            <i class="icon-line-bottom"></i>
                                         </span>
                                     </span>
                                 </span>
@@ -257,7 +257,7 @@ Gateway Login                            </a>
                         </div>
                         <!-- /Responsive toggle -->
                     </div>
-            
+
                     <!-- Navbar menu -->
                     <div id="is-static" class="navbar-menu">
 
@@ -278,7 +278,7 @@ Gateway Login                            </a>
                                                          							<!-- Navbar item -->
                             <a class="navbar-item is-centered-tablet is-slide" href="#wallet">
                                 Wallet
-                            </a>    
+                            </a>
 							<!-- Navbar item -->
 							<a class="navbar-item is-slide is-centered-tablet" href="#contact">
                                 Contact
@@ -296,34 +296,29 @@ Gateway Login                            </a>
                 </div>
             </nav>
             <!-- Hero content -->
-            <div class="hero-body">
-                <div class="container" >
-                    <div class="columns is-vcentered section-card">
-                        <div class="column is-6">
-                            <figure class="">
-                                <img src="https://id2020.org/uploads/images/slide-2.svg" alt="">
-                            </figure>
+            <div class="hero-body" style="background-image: url('assets/images/bg/blockland-b.png'); background-size: cover;">
+                <div class="container" style="padding-top: 48px">
+                    <div class="columns">
+                        <div style="display: flex; align-self: flex-end; justify-content: space-around; width: 530px; padding-block-end: 32px">
+                            <a href="#popup" class="button secondary-btn raised" style="padding: 8px 16px; font-size: 1rem;">For Merchants <span style="padding-left: 12px;">↓</span></a>
+                            <a href="#popup" class="button secondary-btn raised" style="padding: 8px 16px; font-size: 1rem;">For Supply Chains <span style="padding-left: 12px;">↓</span></a>
+                            <a href="#popup" class="button secondary-btn raised" style="padding: 8px 16px; font-size: 1rem;">For Developers <span style="padding-left: 12px;">↓</span></a>
                         </div>
-                        <div class="column is-5 is-offset-1 is-hero-title" style="background-color: #0057ff;border-radius: 41px;padding: 4rem;">
-                            <h1 class="title is-1 pad-title">
-                        The building blocks of FinTech</h1>
-                            <h2 class="subtitle is-4">Universal crypto merchant solutions & accessible blockchain deployment.  Straightforward tools for payments, development, and supply chains.  </h2>
-                            <p class="">
-                            <!--<a href="#contact" class="button button-cta is-bold btn-align secondary-btn raised" style="background-color:white;color: #1D2339;margin-right:10px;">
-View White Paper                                </a>-->
-                               <!-- <a href="#token-sale" class="button button-cta is-bold btn-align secondary-btn raised">
-Learn More                                </a> -->
+                        <div class="column is-5 is-offset-1 is-hero-title">
+                            <h1 class="title is-1 pad-title">The building blocks of FinTech</h1>
+                            <h2 class="subtitle is-4">Universal crypto merchant solutions & accessible blockchain deployment. Straightforward tools for payments, development, and supply chains.</h2>
 
 <!-- Subscribe Block -->
-                        <div class="column is-10 subscribe-column-top" style="padding: 0px !important">
+                        <div class="column is-10 subscribe-column-top">
                         <div class="minimal-feature">
-                            <h2 class="title minimal-title bold-text dark-text no-margin subscribe-title-top">Subscribe to be notified.</h2>
+                            <h2 class="title minimal-title bold-text dark-text no-margin subscribe-title-top" style="line-height: 1.25em; padding-bottom: 12px;">Get updates from<br/>Multichain Ventures</h2>
 
                             <form id="email_signup" class="control subscribe-form-top klaviyo_gdpr_embed_QnzyE2" action="//manage.kmail-lists.com/subscriptions/subscribe?g=QnzyE2" data-ajax-submit="//manage.kmail-lists.com/ajax/subscriptions/subscribe?g=QnzyE2" method="GET" target="_blank" novalidate="novalidate">
                                 <input type="hidden" name="g" value="QnzyE2">
-                                <input type="text" name="email" id="sub_email" class="subscribe-input-top" placeholder="Enter your email">
+                                <input type="text" name="email" id="sub_email" class="subscribe-input-top" style="font-size: 1.1em; font-weight: 400;
+padding-bottom: 0;" placeholder="Enter your email">
                                 <div class="klaviyo_form_actions">
-                                    <button type="submit" class="button input-button subscribe-button-top">OK</button>
+                                    <button type="submit" class="button input-button subscribe-button-top" style="font-size: 1.2em;">Subscribe</button>
                                 </div>
                                 <div class="success_message subscribe-notify-top subscribe-notify-success-top" style="display: none;">
                                     Thank you! Keep an eye out for updates!
@@ -341,12 +336,12 @@ Learn More                                </a> -->
                                         $source: 'MultichainVenturesSubscribe',
                                         Brand: 'MultichainVentures',
                                     },
-                                    success: () => { 
+                                    success: () => {
                                         fbq('track', 'Lead');
                                         registerAchievement($('#sub_email').val());
                                     }
                                 });
-                            </script> 
+                            </script>
                         </div>
                     </div>
 <!-- End Subscribe Block -->
@@ -355,68 +350,15 @@ Learn More                                </a> -->
                     </div>
                 </div>
             </div>
-
-            <!-- Client logos -->
-            <div class="hero-foot pb-30">
-                <div class="container">                                              <!--      <p class="subtitle has-text-centered timer-subtitle">TOKEN SALE HAPPENING NOW - Phase 4 ends in...</p>
-
-
-                                                                    <p id="demo" class="subtitle has-text-centered font-timer"></p>-->
-<script type = "text/javascript">
-// Get timezone offset in minutes
-var dt = new Date();
-
-// Set the date we're counting down to
-var countDownDate = new Date("Apr 1, 2020 0:0:0 GMT+0000").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + " : " + hours + " : "
-  + minutes + " : " + seconds + "";
-
-      // Output the result in an element with id="demo"
-  document.getElementById("demo-days").innerHTML = days;
-  document.getElementById("demo-hours").innerHTML = hours;
-  document.getElementById("demo-minutes").innerHTML = minutes;
-
-      
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "TOKEN SALE OPEN NOW";
-        document.getElementById("demo2").innerHTML = "TOKEN SALE OPEN NOW";
-  }
-
-   
-}, 1000);
-</script>
-
-                   
-                </div>
-            </div>
         </div>
         <!-- /Hero and Navbar -->
-        
-  
+
+
 
 
   <!-- Start Your Journey Section -->
 		<a name="team"></a>
-        <div class="section section-feature-grey is-medium has-background-image is-contain">
+        <div class="section section-feature-grey is-medium has-background-image is-contain" data-background="assets/images/bg/shapes/circles-and-shapes.png">
             <div class="container">
                 <!-- Title -->
                 <div class="section-title-wrapper has-text-centered">
@@ -428,18 +370,18 @@ var x = setInterval(function() {
                     <h2 class="title is-2 dark-font">Start Your Journey</h2>
                     <h4 class="subtitle is-4 dark-font">Choose your area of interest.</h4>
                 </div>
-                
+
                 <!-- Content -->
               <div class="content-wrapper">
 
               <div class="container journey-wrapper">
-              
+
 
 
 
                     <div class="columns">
 
-                        
+
 
                         <!-- Journey Item -->
                         <div class="column is-4">
@@ -462,7 +404,7 @@ var x = setInterval(function() {
                         </a>
                         </div>
                         <!-- /Journey Item -->
-                        
+
                         <!-- Journey Item -->
                         <div class="column is-4">
                         <a href="#popup">
@@ -524,7 +466,7 @@ var x = setInterval(function() {
                 </a></div>
               </div>
 <!-- Journey Pop-up -->
-       
+
 
                       </div>
                     </div>
@@ -534,10 +476,10 @@ var x = setInterval(function() {
         <!-- /Start Your Journey Section -->
 
 
-        
+
         <!-- App showcase Section -->
 		<a name="portfolio"></a>
-        <div class="section is-medium section-feature-grey has-background-image is-contain">
+        <div class="section is-medium section-feature-grey has-background-image is-contain" data-background="assets/images/bg/shapes/circles-and-shapes.png">
             <div class="container">
                 <!-- Title -->
                 <div class="section-title-wrapper has-text-centered">
@@ -549,7 +491,7 @@ var x = setInterval(function() {
                   <h2 class="title is-2 dark-font">What is Multichain Ventures?</h2>
                     <h4 class="subtitle is-4 dark-font">Multichain Ventures has an integrated ecosystem of software products with TKS token integrations at every step. <br>Learn about our portfolio of products below.</h4>
                 </div>
-   
+
                 <!-- Content -->
                 <div id= "tabs" class="content-wrapper">
                     <div class="columns is-vcentered">
@@ -587,7 +529,7 @@ var x = setInterval(function() {
                             <div id="feature-2" class="showcase-text-wrapper animated preFadeInUp fadeInUp is-hidden">
                                 <h3 class="title is-3 dark-font">What is Cubed?</h3>
                                 <p class="mb-10">Cubed is an off-the-shelf payment solution for merchants looking to offer their customers a crypto payments option, with white label solutions also available.</p>
-   
+
                                 <p>Cubed builds payment processing software for cryptocurrency adoption in both physical brick and mortar businesses and for ecommerce.  This includes point of sale software, web checkout components, payment APIs, consumer wallets, and custom block explorers, with integrations to popular inventory management and CRM software.</p>
                                 <a href="cubed.html"  class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20">
                                    Learn More
@@ -596,7 +538,7 @@ var x = setInterval(function() {
 							                            <!-- Feature -->
                             <div id="feature-3" class="showcase-text-wrapper animated preFadeInUp fadeInUp is-hidden">
                                 <h3 class="title is-3 dark-font">What is the Tokes Platform?</h3>
-                                
+
                                 <p>Tokes Platform leverages blockchain technology to overcome hurdles within the legal cannabis industry.  Federal prohibition has resulted in a lack of banking options for licensed cannabis businesses. By leveraging decentralized blockchain technology, Tokes provides financial freedom to these entities and enhances supply chain visibility of cannabis goods for business stakeholders, regulators, and consumers.</p>
                                 <a href="tokes.html" class="button button-cta is-bold btn-align secondary-btn raised mt-20 mb-20">
                                                                         Learn More
@@ -660,7 +602,7 @@ function onJqueryLoad() {
     var dottext = $(".showcase-text-container > .showcase-text-wrapper");
 
     var timer = setInterval(function(){
-        
+
         var cur = $(".slide-control > .is-active").index();
         var curimage = $(".showcase-wrapper > .is-active").index();
         var curtext = $(".showcase-text-container > .showcase-text-wrapper").index();
@@ -698,7 +640,7 @@ function onJqueryLoad() {
             $('#journey-popup-1').addClass("is-popup");
             $('#journey-popup-1').siblings().removeClass("is-popup");
         }
-    }); 
+    });
 
     $('#journey-button-2').click(function(){
         if($(this).hasClass('active-journey')) {
@@ -756,7 +698,7 @@ function onJqueryLoad() {
         $('#token-feature-2').removeClass("is-visible");
         $('#token-feature-3').removeClass("is-visible");
 
-    }); 
+    });
 
 
     $('#token-button-2').click(function(){
@@ -768,7 +710,7 @@ function onJqueryLoad() {
         $('#token-feature-1').removeClass("is-visible");
         $('#token-feature-3').removeClass("is-visible");
 
-    }); 
+    });
 
 
     $('#token-button-3').click(function(){
@@ -780,7 +722,7 @@ function onJqueryLoad() {
         $('#token-feature-1').removeClass("is-visible");
         $('#token-feature-2').removeClass("is-visible");
 
-    }); 
+    });
 }
 
 function setupSubscriptionPopup() {
@@ -816,7 +758,7 @@ function registerAchievement(email) {
             </div>
         </div>
         <!-- /App showcase Section -->
-        
+
 
 
         <a name="wallet"></a>
@@ -840,13 +782,13 @@ function registerAchievement(email) {
                       <div class="column is-7">
                       <img class="download-image" src="assets/images/illustrations/mockups/wallet-device.png">
                       </div>
-                    
+
                     </div>
                   </div>
                 </div>
         </div>
         <!-- /Testimonials Section -->
-       
+
 
 
 
@@ -854,7 +796,7 @@ function registerAchievement(email) {
 
         <!-- Contact Section -->
 		<a name="contact"></a>
-        <div class="section is-medium section-feature-grey footer-section">
+        <div class="section is-medium section-feature-grey">
             <div class="container">
                 <!-- Title -->
                 <div class="section-title-wrapper has-text-centered">
@@ -947,7 +889,7 @@ function registerAchievement(email) {
                                             $('#message').val(''),
                                             $('#contact-thanks').show();
                                             $('#contact-button').hide();
-                                        }	
+                                        }
                                     });
                                 }
                             </script>
@@ -1001,7 +943,7 @@ function registerAchievement(email) {
             </div>
         </div>
         <!-- /Contact Section -->
-        
+
         <!-- Footer -->
         <!-- Simple light footer -->
         <footer class="footer footer-light-medium">
@@ -1030,7 +972,7 @@ function registerAchievement(email) {
                                 <a href="https://facebook.com/multichainventures" target="_blank">
                                     <span class="icon"><i class="fa fa-facebook"></i></span>
                                 </a>
-                                
+
                                 <a href="https://youtube.com/multichainventures" target="_blank">
                                     <span class="icon"><i class="fa fa-youtube-play"></i></span>
                                 </a>
@@ -1114,7 +1056,7 @@ function registerAchievement(email) {
                     <li class="category-link" data-navigation-menu="extras"><i class="sl sl-icon-present"></i></li>
                 </ul>
                 <!-- Menu -->
-        
+
                 <ul class="author">
                     <li>
                         <!-- Theme author -->
@@ -1125,13 +1067,13 @@ function registerAchievement(email) {
                 </ul>
             </div>
             <!-- /Categories menu -->
-        
+
                  <!-- Back To Top Button -->
         <div id="backtotop"><a href="#"></a></div>        <!-- Concatenated jQuery and plugins -->
         <script src="assets/js/app.js"></script>
-        
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
         <!-- Bulkit js -->
         <script src="assets/js/main.js"></script>
-        <script src="assets/js/landingv4.js"></script>    </body>  
+        <script src="assets/js/landingv4.js"></script>    </body>
 </html>
