@@ -23,6 +23,13 @@
     padding: 1.5rem 2rem !important;
     border-radius: 50px;
 }
+
+.footer-card {
+    background-color: white;
+    padding: 1rem 5rem;
+    border-radius: 16px;
+}
+
 .footer-section {
     background-color: #0057ff !important;
     padding: 0rem 1.5rem !important;
