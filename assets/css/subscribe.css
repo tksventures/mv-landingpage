@@ -1,3 +1,14 @@
+.journey-hero{
+    padding: 7px 16px;
+    font-size: 1rem;
+}
+
+.journey-hero > span {
+    padding-left: 12px;
+}
+
+.journey-hero:hover {background-color: #0057ff;}
+
 .section-card {
     background-color: #ffffff;
     padding: 1.5rem 2rem !important;
@@ -683,7 +694,7 @@ textarea:focus, input:focus{
     /* padding: 0.5em 1em 1.5em 1em; */
     font-weight: 600;
     margin-left: 12px;
-    margin-top: -1px;
+    margin-top: -0px;
     color: #ffffff;
     padding-bottom: .6rem;
     /* border: 1px solid #0057ff; */
