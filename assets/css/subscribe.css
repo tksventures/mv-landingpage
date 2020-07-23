@@ -9,7 +9,7 @@
 }
 .divider-left {
     width: 20px;
-    border-right: 1px solid #0000001f;
+    border-right: 1px solid #0000001a;
     height: 40px;
     margin-top: 14px;
 }
@@ -662,7 +662,7 @@ textarea:focus, input:focus{
 .subscribe-input-top {
     position: relative;
     display: inline;
-    border-radius: 50px;
+    border-radius: 8px;
     transition: all 0.8s;
     padding: 1rem;
     font-size: 1rem;
@@ -678,12 +678,12 @@ textarea:focus, input:focus{
 .subscribe-button-top {
     position: relative;
     display: inline;
-    border-radius: 50px;
-    font-size: 1.5rem;
+    border-radius: 8px;
+    font-size: 1.42rem;
     /* padding: 0.5em 1em 1.5em 1em; */
     font-weight: 800;
     margin-left: 12px;
-    margin-top: -3.1px;
+    margin-top: -1px;
     color: #0057ff;
     /* border: 1px solid #0057ff; */
 }
