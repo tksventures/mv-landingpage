@@ -134,14 +134,14 @@
 
 
 .hero-feature {
-    color: #0e0e0e;
+    color: #00000085;
     /* font-weight: 700; */
     font-size: 2.5rem;
     /* font-style: italic; */
     line-height: 2.9rem;
     }
 .wallet-title{
-    color: #0057ff;
+    color: #697da5;
 }
 
 .spacemaker{
@@ -412,7 +412,7 @@ background-color: white !important;
 box-shadow: 0 8px 12px #0057ff2e;
 }
 .button-nav-blue:hover{
-    background-color: #0057ff !important;
+    background-color: #697da5 !important;
     box-shadow: 0 8px 12px #0057ff36;
     color: white !important;
 }
@@ -1005,7 +1005,7 @@ select {
     font-weight: 600;
     border-radius: 4px;
     padding: 0 1.25rem 0.2rem 1.25rem;
-    background-color: #0057ff;
+    background-color: #697da5;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 10px;
