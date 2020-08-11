@@ -1,3 +1,14 @@
+.txt-rotate{
+    color: #000000;
+    font-size: 2.5rem;
+    line-height: 2.9rem;
+    font-weight: 900;
+    /* min-height: 480px; */
+    /* position: absolute; */
+}
+
+
+
 @keyframes tonext {
     75% {
       left: 0;
@@ -134,7 +145,7 @@
 
 
 .hero-feature {
-    color: #00000085;
+    color: #5b78b3;
     /* font-weight: 700; */
     font-size: 2.5rem;
     /* font-style: italic; */
@@ -837,12 +848,12 @@ textarea:focus, input:focus{
     transition: all 0.8s;
     padding: 0rem 2rem;
     font-size: 1.3rem;
-    background-color: #ffffff61;
+    background-color: #ffffff70;
     color: #0057ff;
     max-width: 100%;
     width: 100%;
     font-weight: 600;
-    border: 0px solid #ffffff;
+    border: 1px solid #000000;
     /* border: 1px solid #000000; */
     /* margin-right: 20px; */
 }
@@ -902,6 +913,8 @@ textarea:focus, input:focus{
     padding-bottom: 12px;
     font-size: 3.3rem !important;
     line-height: 3.4rem;
+    overflow: hidden;
+    animation: animate 1s ease-in forwards;
 }
 
 
