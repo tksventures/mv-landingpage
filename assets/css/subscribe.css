@@ -874,7 +874,7 @@ textarea:focus, input:focus{
     transition: all 0.8s;
     padding: 0rem 2rem;
     font-size: 1.3rem;
-    background-color: #ffffff70;
+    background-color: #ffffff;
     color: #0057ff;
     max-width: 100%;
     width: 100%;
