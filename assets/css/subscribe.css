@@ -9,7 +9,7 @@
     padding: .5rem 2rem;
     margin-top: 90px;
     position: relative;
-    background-color: #d3d3d31a;
+    background-color: #5670bb0d;
     text-transform: uppercase;
     font-weight: 900;
     margin: 1rem;
@@ -178,7 +178,7 @@
     line-height: 2.9rem;
     }
 .wallet-title{
-    color: #697da5;
+    color: #5670bb;
 }
 
 .spacemaker{
@@ -449,7 +449,7 @@ background-color: white !important;
 box-shadow: 0 8px 12px #0057ff2e;
 }
 .button-nav-blue:hover{
-    background-color: #697da5 !important;
+    background-color: #5670bb !important;
     box-shadow: 0 8px 12px #0057ff36;
     color: white !important;
 }
@@ -939,7 +939,7 @@ textarea:focus, input:focus{
 
 .pad-title{
     padding-bottom: 12px;
-    font-size: 6.3rem !important;
+    font-size: 5.3rem !important;
     line-height: 6.4rem;
     overflow: hidden;
     animation: animate 1s ease-in forwards;
