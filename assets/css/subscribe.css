@@ -875,7 +875,7 @@ textarea:focus, input:focus{
     padding: 0rem 2rem;
     font-size: 1.3rem;
     background-color: #ffffff;
-    color: #0057ff;
+    color: #5670bb;
     max-width: 100%;
     width: 100%;
     font-weight: 600;
@@ -998,7 +998,7 @@ textarea:focus, input:focus{
 .input-select {
     background-color: #fff;
     border-color: #ffffff;
-    color: #0057ff;
+    color: rgb(86 112 187);
     box-shadow: inset 0 1px 2px rgba(10,10,10,0.1);
     max-width: 100%;
     width: 100%;
