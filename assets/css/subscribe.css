@@ -1,6 +1,14 @@
+.highlight-text{
+    color: #0057ff;
+}
+
 .section-white{background-color: white;}
 .hero-subtitle{
-    font-size: 2rem !important;
+    font-size: 2.5rem !important;
+    padding: 0 10rem;
+    line-height: 1.15 !important;
+    font-weight: 100;
+    color: black;
 }
 .cta-base{
     font-size: 1rem;
@@ -26,10 +34,10 @@
 .cta-right{}
 
 .txt-rotate{
-    color: #5670bb;
+    color: #0057ff;
     font-size: 4.5rem;
     line-height: 5.9rem;
-    font-weight: 900;
+    font-weight: 800;
     /* min-height: 480px; */
     /* position: absolute; */
     text-transform: lowercase;
@@ -184,7 +192,7 @@
 }
 
 .spacemaker{
-    padding-top: 118px;
+    /* padding-top: 118px; */
     margin-bottom: 148px;
 }
 
@@ -940,11 +948,13 @@ textarea:focus, input:focus{
 
 
 .pad-title{
-    padding-bottom: 12px;
-    font-size: 5.3rem !important;
-    line-height: 6.4rem;
+    /* padding-bottom: 12px; */
+    font-size: 3.65rem !important;
+    line-height: 5rem;
     overflow: hidden;
     animation: animate 1s ease-in forwards;
+    margin-block-end: 1.15rem !important;
+    /* font-weight: 100; */
 }
 
 
