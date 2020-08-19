@@ -1,6 +1,8 @@
 .highlight-text{
-    color: #0057ff;
+    color: #000000;
 }
+
+.type-text {font-family: 'Cutive Mono', monospace;font-weight: 900;}
 
 .section-white{background-color: white;}
 .hero-subtitle{
@@ -35,9 +37,9 @@
 
 .txt-rotate{
     color: #0057ff;
-    font-size: 4.5rem;
+    font-size: 3.8rem;
     line-height: 5.9rem;
-    font-weight: 800;
+    font-weight: 600;
     /* min-height: 480px; */
     /* position: absolute; */
     text-transform: lowercase;
@@ -188,7 +190,7 @@
     line-height: 2.9rem;
     }
 .wallet-title{
-    color: #5670bb;
+    color: #0057ff;
 }
 
 .spacemaker{
@@ -950,7 +952,7 @@ textarea:focus, input:focus{
 .pad-title{
     /* padding-bottom: 12px; */
     font-size: 3.65rem !important;
-    line-height: 5rem;
+    line-height: 4.5rem;
     overflow: hidden;
     animation: animate 1s ease-in forwards;
     margin-block-end: 1.15rem !important;
@@ -1058,7 +1060,7 @@ select {
     font-weight: 600;
     border-radius: 4px;
     padding: 0 1.25rem 0.2rem 1.25rem;
-    background-color: #5670bb;
+    background-color: #0057ff;
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: 10px;
