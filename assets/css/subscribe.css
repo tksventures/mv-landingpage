@@ -686,7 +686,14 @@ textarea:focus, input:focus{
     padding: 1rem !important;
     margin: 0% 30% 3% 30% !important;
 }
-
+@media screen and (max-width: 960px) {
+.contact-icon{
+    /* width: 0px !important; */
+    /* height: 10px !important; */
+    /* border-radius: 180% !important; */
+    display: none !important;
+}
+}
 }
 @media screen and (max-width: 1000px) {
 
@@ -698,7 +705,9 @@ textarea:focus, input:focus{
 @media screen and (max-width: 768px) {
     .navbutton-tablet{/* padding: 100% !important; */}
     .divider-left {border-right: 1px solid transparent;}
-    
+    .mvlogo-pad{
+    padding-bottom: 4rem;
+}
     .button-nav-blue{
         background-color: #ffffff  !important;
         color: #0057ff !important;
