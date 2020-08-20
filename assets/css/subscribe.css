@@ -702,12 +702,34 @@ textarea:focus, input:focus{
     margin-right: 80px !important;
 }
 }
+@media screen and (max-width: 460px) {
+
+.txt-rotate{
+    font-size: 1rem !important;
+}
+.spacemaker{
+    margin-bottom: 294px !important;
+}
+}
 @media screen and (max-width: 768px) {
     .navbutton-tablet{/* padding: 100% !important; */}
     .divider-left {border-right: 1px solid transparent;}
     .mvlogo-pad{
     padding-bottom: 4rem;
 }
+.spacemaker{
+    margin-bottom: 188px;
+}
+.hero-subtitle{
+    font-size: 1rem !important;
+    padding: 0;
+}
+.txt-rotate{font-size: 1.5rem;/* width: 30%; *//* padding: 0rem 2rem; */line-height: 2rem;}
+.title{
+    line-height: 3rem;
+    font-size: 2rem !important;
+}
+
     .button-nav-blue{
         background-color: #ffffff  !important;
         color: #0057ff !important;
