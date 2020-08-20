@@ -1,7 +1,11 @@
 .highlight-text{
     color: #000000;
 }
-
+.hero-bgimg{
+    background-image: linear-gradient( to bottom, transparent 0%, transparent 84%, #ffffff ), url(../images/bg/blockland-landscape.jpg);
+    background-size: cover;
+    background-position-x: center;
+}}
 .type-text {/* font-weight: 900; */font-family: 'Courier Prime', monospace;/* font-family: 'Anonymous Pro', monospace; */}
 
 .section-white{background-color: white;}
@@ -641,7 +645,6 @@ textarea:focus, input:focus{
 
 
 
-
 @media screen and (max-width: 1279px) {
     .wallet-title{
         line-height: 2rem;
@@ -703,7 +706,12 @@ textarea:focus, input:focus{
 }
 }
 @media screen and (max-width: 460px) {
+    .hero-bgimg{
+        background-position-y: -70px;
+        /* background-size: 410%; */
+    }
 
+.hero-body.hero-bgimg {}
 .txt-rotate{
     font-size: 1rem !important;
 }
