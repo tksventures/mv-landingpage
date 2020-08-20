@@ -460,11 +460,7 @@ background-color: white !important;
 
 box-shadow: 0 8px 12px #0057ff2e;
 }
-.button-nav-blue:hover{
-    background-color: #0057ff !important;
-    box-shadow: 0 8px 12px #0057ff36;
-    color: white !important;
-}
+
 .token-font-title{
     padding-bottom: 30px;
 }
@@ -643,6 +639,9 @@ textarea:focus, input:focus{
     color: #00edb1;
 }
 
+
+
+
 @media screen and (max-width: 1279px) {
     .wallet-title{
         line-height: 2rem;
@@ -665,11 +664,28 @@ textarea:focus, input:focus{
     }
 }
 
-@media screen and (max-width: 1087px) {
+@media screen and (min-width: 1087px) {
 
-.button-nav-blue{padding: 1rem !important;
-        margin: 0% 30% 3% 30% !important;}
+.button-nav-blue:hover{
+    background-color: #0057ff !important;
+    box-shadow: 0 8px 12px #0057ff36;
+    color: white !important;
+}
+}
+@media screen and (max-width: 1087px) {
+.navbutton-tablet{/* padding: 100% !important; */}
 .divider-left {border-right: 1px solid transparent;}
+
+.button-nav-blue{
+    background-color: #ffffff  !important;
+    color: #0057ff !important;
+    transition: box-shadow 0.6s;
+    border: 1.25px solid #0057ff;
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 1rem !important;
+    margin: 0% 30% 3% 30% !important;
+}
 
 }
 @media screen and (max-width: 1000px) {
@@ -680,7 +696,28 @@ textarea:focus, input:focus{
 }
 }
 @media screen and (max-width: 768px) {
-
+    .navbutton-tablet{/* padding: 100% !important; */}
+    .divider-left {border-right: 1px solid transparent;}
+    
+    .button-nav-blue{
+        background-color: #ffffff  !important;
+        color: #0057ff !important;
+        transition: box-shadow 0.6s;
+        border: 1.25px solid #0057ff;
+        border-radius: 5px;
+        font-weight: 500;
+        padding: 1rem 0rem !important;
+        margin: 0% 20% 3% 20% !important;
+        width: auto !important;
+    }
+    
+    }
+    @media screen and (max-width: 1000px) {
+    
+    .grid-clients .client{
+        margin-left: 80px !important;
+        margin-right: 80px !important;
+    }
 
 
 .subtitle-tweak{
@@ -1091,16 +1128,7 @@ select {
     color: white;
     transition: box-shadow 0.6s;
     }
-.button-nav-blue{
-    background-color: #ffffff;
-    color: #0057ff;
-    transition: box-shadow 0.6s;
-    border: 1.25px solid #0057ff;
-    border-radius: 5px;
-    font-weight: 500;
-    /* padding: 1rem; */
-    /* margin: 0% 30% 3% 30% !important; */
-}
+
 
 a.navbar-item.is-centered-tablet.button-nav.button-nav-blue {}
 
