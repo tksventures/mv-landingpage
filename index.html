@@ -338,6 +338,8 @@ TxtRotate.prototype.tick = function() {
   if (!this.isDeleting && this.txt === fullTxt) {
     delta = this.period;
     this.isDeleting = true;
+    delta = 1000;
+
   } else if (this.isDeleting && this.txt === '') {
     this.isDeleting = false;
     this.loopNum++;
