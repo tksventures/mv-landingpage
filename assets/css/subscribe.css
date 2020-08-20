@@ -2,7 +2,7 @@
     color: #000000;
 }
 
-.type-text {font-family: 'Cutive Mono', monospace;font-weight: 900;}
+.type-text {/* font-weight: 900; */font-family: 'Courier Prime', monospace;/* font-family: 'Anonymous Pro', monospace; */}
 
 .section-white{background-color: white;}
 .hero-subtitle{
@@ -195,7 +195,7 @@
 
 .spacemaker{
     /* padding-top: 118px; */
-    margin-bottom: 278px;
+    margin-bottom: 188px;
 }
 
 .journey-hero{
@@ -643,15 +643,45 @@ textarea:focus, input:focus{
     color: #00edb1;
 }
 
+@media screen and (max-width: 1279px) {
+    .wallet-title{
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+    .title-line-height{
+        line-height: 2rem;
+    }
+    .pad-title{
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+    .spacemaker{}
+    .hero-subtitle{
+        font-size: 1.5rem !important;
+    }
+    
+    .txt-rotate{font-size: 2.5rem;}
+          
+    }
+}
 
+@media screen and (max-width: 1087px) {
 
+.button-nav-blue{padding: 1rem !important;
+        margin: 0% 30% 3% 30% !important;}
+.divider-left {border-right: 1px solid transparent;}
 
+}
+@media screen and (max-width: 1000px) {
 
-
-
-
-
+.grid-clients .client{
+    margin-left: 80px !important;
+    margin-right: 80px !important;
+}
+}
 @media screen and (max-width: 768px) {
+
+
 
 .subtitle-tweak{
     margin-bottom: -9px !important;
@@ -950,13 +980,7 @@ textarea:focus, input:focus{
 
 
 .pad-title{
-    /* padding-bottom: 12px; */
-    font-size: 3.65rem !important;
-    line-height: 4.5rem;
-    overflow: hidden;
-    animation: animate 1s ease-in forwards;
-    margin-block-end: 1.15rem !important;
-    /* font-weight: 100; */
+
 }
 
 
@@ -1074,6 +1098,8 @@ select {
     border: 1.25px solid #0057ff;
     border-radius: 5px;
     font-weight: 500;
+    /* padding: 1rem; */
+    /* margin: 0% 30% 3% 30% !important; */
 }
 
 a.navbar-item.is-centered-tablet.button-nav.button-nav-blue {}
